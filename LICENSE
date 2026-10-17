@@ -1,0 +1,65 @@
+
+## MIT License
+
+Copyright (c) 2026 Pulstec
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the "Software"), to deal in the Software
+without restriction, including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+---
+
+## Лицензия MIT (перевод)
+
+Правообладатель (c) 2026 Пульстек
+
+Настоящим любому лицу, получившему копию этого программного обеспечения и сопутствующих
+файлов документации (далее — «Программное обеспечение»), безвозмездно предоставляется
+разрешение использовать Программное обеспечение без ограничений, включая без изъятий
+право использовать, копировать, изменять, объединять, публиковать, распространять,
+передавать по сублицензии и (или) продавать копии Программного обеспечения, а также
+разрешать это делать лицам, которым предоставлено Программное обеспечение, при
+соблюдении следующих условий:
+
+Приведённое выше уведомление об авторском праве и настоящее уведомление о разрешении
+должны быть включены во все копии или значимые части Программного обеспечения.
+
+ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНО
+ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ ГАРАНТИЯМИ ТОВАРНОЙ
+ПРИГОДНОСТИ, СООТВЕТСТВИЯ ОПРЕДЕЛЁННОМУ НАЗНАЧЕНИЮ И ОТСУТСТВИЯ НАРУШЕНИЙ ПРАВ ТРЕТЬИХ
+ЛИЦ. НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ АВТОРЫ ИЛИ ПРАВООБЛАДАТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ПО
+КАКИМ-ЛИБО ИСКАМ, ЗА УЩЕРБ ИЛИ ПО ИНЫМ ОСНОВАНИЯМ, В ТОМ ЧИСЛЕ ПРИ ДЕЙСТВИИ ДОГОВОРА,
+ДЕЛИКТЕ ИЛИ ИНОЙ СИТУАЦИИ, ВОЗНИКШИМ ИЗ-ЗА ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ, ИСПОЛЬЗОВАНИЯ ЕГО
+ИЛИ ИНЫХ ДЕЙСТВИЙ С НИМ.
+
+---
+
+## What the licence does not cover · Что лицензия не передаёт
+
+The name **Pulstec**, the Russian name **Пульстек** and the Pulstec logo are trade marks
+of their owner. This licence grants no rights to them. You may of course say that your
+plugin works with Pulstec; you may not use the name or the logo in a way that suggests
+your product comes from us or is endorsed by us.
+
+Имя **Pulstec**, русское имя **Пульстек** и логотип Пульстек — средства
+индивидуализации правообладателя. Настоящая лицензия прав на них не передаёт. Написать,
+что ваш плагин работает с Пульстеком, разумеется, можно; использовать имя или логотип
+так, будто ваш продукт выпущен нами или нами одобрен, — нет.
+
+Plugins contributed by other authors remain the work of those authors and are covered by
+this licence only if their author submitted them under it.
+
+Плагины, присланные другими авторами, остаются их работой и подпадают под настоящую
+лицензию только в том случае, если автор прислал их на этих условиях.
