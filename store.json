@@ -1,0 +1,1586 @@
+{
+ "версия": 1,
+ "магазин": {
+  "имя": "Магазин Пульс Офиса",
+  "описание": "Плагины к Пульс Офису: один файл на плагин.",
+  "en": {
+   "имя": "Puls Office store",
+   "описание": "Plugins for Puls Office: one file per plugin."
+  }
+ },
+ "плагины": [
+  {
+   "id": "highlight-code",
+   "имя": "Подсветка кода",
+   "версия": "2.0.1",
+   "описание": "Разбирает код из выделенных клеток тем же разборщиком, что у редактора модулей («разметить»), и раскладывает его на лист: строка кода — строка листа, лексема — клетка со своим цветом. Языки: JavaScript, SQL, Basic, Python, JSON, HTML.",
+   "категория": "Текст",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/highlight-code/highlight-code.plsplug.json",
+   "размер": 7559,
+   "sha256": "10604bc91fedbd221bfca374a27a12bac4542d2d6316748f5ab07945ed745017",
+   "значок": "plugins/highlight-code/icon.svg",
+   "права": {
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "прежние": [
+    "подсветка-кода"
+   ],
+   "en": {
+    "имя": "Code highlighting",
+    "описание": "Lays code out on the sheet cell by cell, coloured by the same tokenizer the macro editor uses: six languages, one row of the sheet per line of code.",
+    "категория": "Text"
+   }
+  },
+  {
+   "id": "typograf",
+   "имя": "Типограф",
+   "версия": "1.0",
+   "описание": "Типографика русского набора без сервиса: кавычки ёлочками и лапками, тире вместо дефиса, многоточие, знаки © ® ™ ×, лишние пробелы и неразрывный пробел после коротких слов, перед единицами и перед тире. Работает и в книге, и в документе.",
+   "категория": "Текст",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/typograf/typograf.plsplug.json",
+   "размер": 12937,
+   "sha256": "b56e51acf73e841f4e21f6d707dd20b05f94f3ab0319ca1c560fbbbf09b789c6",
+   "значок": "plugins/typograf/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Typography",
+    "описание": "Russian typography right in the book, with no service behind it: guillemets, dashes, ellipsis, the (c) (r) (tm) signs and non-breaking spaces where a line break would hurt the meaning.",
+    "категория": "Text"
+   }
+  },
+  {
+   "id": "cell-formatter",
+   "имя": "Обработка значений",
+   "версия": "1.0",
+   "описание": "Приводит в порядок выделенные клетки: регистр, лишние и неразрывные пробелы, переносы строк, текст в число и обратно, округление, замена (в том числе по образцу), приставка и окончание. Перед записью показывает, что получится.",
+   "категория": "Текст",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/cell-formatter/cell-formatter.plsplug.json",
+   "размер": 10067,
+   "sha256": "9bea20ca7ced4e53dc9163763fdaa7d852e93e1285a9870d599a4708eea415b8",
+   "значок": "plugins/cell-formatter/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Cell values",
+    "описание": "Tidies up the selected cells: letter case, stray and non-breaking spaces, line breaks, text to number and back, rounding, search and replace (plain or by pattern), prefix and suffix. Shows the result before writing it.",
+    "категория": "Text"
+   }
+  },
+  {
+   "id": "input-check",
+   "имя": "Контроль ввода",
+   "версия": "1.0",
+   "описание": "Фоновый плагин: следит за правками (отрицательные числа), кладёт пункты в меню любой клетки, считает итог выделения кнопкой на ленте.",
+   "категория": "Проверки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/input-check/input-check.plsplug.json",
+   "размер": 4335,
+   "sha256": "87661acc8bb26b0b7bd8296f1baad57f1cfa6a0cab549df715c2104c99636dbe",
+   "значок": "plugins/input-check/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "прежние": [
+    "контроль-ввода"
+   ],
+   "en": {
+    "имя": "Input check",
+    "описание": "A background plugin: watches edits, marks negative numbers, adds a cell-menu item and its own ribbon group.",
+    "категория": "Validation"
+   }
+  },
+  {
+   "id": "selection-stats",
+   "имя": "Статистика выделения",
+   "версия": "1.0",
+   "описание": "Показывает по выделению: клеток, чисел, текста, пустых, сумму, среднее, минимум, максимум и сколько разных значений. Обновляется на каждом ходе курсора; на больших областях итоги считает ядро, не вывозя данные.",
+   "категория": "Проверки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/selection-stats/selection-stats.plsplug.json",
+   "размер": 6324,
+   "sha256": "d26cb5a88708cdf9e815b312083f74bfc90ec89c3191d38d035a2659d4a6bde6",
+   "значок": "plugins/selection-stats/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Selection statistics",
+    "описание": "For the current selection: cells, numbers, text, blanks, sum, average, minimum, maximum and how many distinct values. Follows the cursor; on large areas the totals are computed by the core without moving any data.",
+    "категория": "Validation"
+   }
+  },
+  {
+   "id": "unit-converter",
+   "имя": "Конвертер единиц",
+   "версия": "1.0",
+   "описание": "Переводит величины между единицами: длина, масса, площадь, объём, скорость, время, данные, давление, энергия, температура. Считает одно значение или переводит всё выделение на месте.",
+   "категория": "Счёт",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/unit-converter/unit-converter.plsplug.json",
+   "размер": 8131,
+   "sha256": "56a6bd2f5b5cc312c83aabb257060e145014524ba87c3f45e0b8d511c38e048e",
+   "значок": "plugins/unit-converter/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Unit converter",
+    "описание": "Converts between units of length, mass, area, volume, speed, time, data, pressure, energy and temperature - one value, or the whole selection in place.",
+    "категория": "Calculation"
+   }
+  },
+  {
+   "id": "date-picker",
+   "имя": "Выбор даты",
+   "версия": "1.0",
+   "описание": "Календарь вместо ручного набора: дата в клетку с нужным форматом, быстрые «сегодня», «начало» и «конец месяца», ряд дат с шагом (день, рабочий день, неделя, месяц, год) и счёт рабочих дней до выбранной.",
+   "категория": "Счёт",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/date-picker/date-picker.plsplug.json",
+   "размер": 10720,
+   "sha256": "6030ad662b248139efa1080d6f0ed880bdaf17b3a286eec08403911a92b56ce2",
+   "значок": "plugins/date-picker/icon.svg",
+   "права": {
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Date picker",
+    "описание": "A calendar instead of typing dates by hand: a date into the cell with the right format, quick \"today\", \"start\" and \"end of month\", a series of dates by step (day, working day, week, month, year) and the count of working days.",
+    "категория": "Calculation"
+   }
+  },
+  {
+   "id": "data-generator",
+   "имя": "Генератор данных",
+   "версия": "1.0",
+   "описание": "Кладёт на лист правдоподобную таблицу для проверок: люди, заказы, числа, даты или свой набор столбцов. Одно и то же зерно даёт одну и ту же таблицу, поэтому проверку можно повторить.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/data-generator/data-generator.plsplug.json",
+   "размер": 13154,
+   "sha256": "4fe0850ab2bb6eff25e8bc5167450c98e56f224a2c78fd864bb65d3b5d3718e7",
+   "значок": "plugins/data-generator/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Data generator",
+    "описание": "Puts a believable table on the sheet to test against: people, orders, numbers, dates or your own set of columns. The same seed gives the same table, so a test can be repeated.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "pgdb",
+   "имя": "СУБД (PostgreSQL)",
+   "версия": "1.1",
+   "описание": "PostgreSQL и Postgres Pro через HTTP-шлюз: список таблиц и представлений, столбцы, выгрузка данных на лист",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/pgdb/pgdb.plsplug.json",
+   "размер": 14203,
+   "sha256": "dedab7b6dc7c24d2e023ca9daacd8becc6b178af3bd4e391104fbc217555d405",
+   "значок": "plugins/pgdb/icon.svg",
+   "права": {
+    "сеть": [
+     "{сервер}"
+    ],
+    "хранилище": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "DBMS (PostgreSQL)",
+    "описание": "PostgreSQL and Postgres Pro over an HTTP gateway: list of tables and views, a query, the result written onto the sheet.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "hyperion",
+   "имя": "Hyperion",
+   "версия": "2.7.0",
+   "описание": "Кубы Oracle Essbase и Hyperion Planning прямо на листе. Подключение — одной ссылкой на сервер (как общие подключения Smart View): APS, Planning, серверы Essbase и приложения находятся сами и перечитываются при каждом новом сеансе; каждый сервер Essbase проверяется, сеанс открывается на отвечающем; «Закрыть сеанс» закрывает сеансы на сервере и забывает прочитанное. Срез по XMLA через Essbase Provider Services (APS): куб одним деревом — измерения и их элементы с поиском, подписи всего среза — псевдонимами (alias) или именами, раскладка по строкам, столбцам и страницам, «Сформировать срез» по ролям измерений (статьи, периоды, версии и сценарии; атрибутные измерения в срез не идут — узнаются по признаку Essbase), раскрытие и сборка строк и столбцов прямо на листе, перенос измерений мышью, элементы из дерева — на сетку, свободный ввод подписей, скрытие пустых, детализация числа с возвратом. Вкладка MDX: свой запрос (или запрос нынешнего среза) — на лист. Формы: свои — сохранённые срезы и запросы MDX, и формы Planning по протоколу Smart View (папки, ввод чисел в форму; запасной путь — REST): форма ложится умной таблицей (пустые строки и столбцы можно удалять, строки — сортировать и фильтровать: правки находятся по подписям), страницы формы — над таблицей, другой элемент выбирается прямо на листе, точка формы видна рядом; «Запрос по форме» строит по ней срез на новом листе — с переносом, раскрытием и сворачиванием; срез формы сам встаёт в панель «Срез» (куб, строки, столбцы, страницы и точка — как в форме), кнопка «Срез по форме» — то же по выбранной форме. Числа правятся на листе и пишутся в куб через REST Planning (стёртая клетка уходит как #Missing — пустое значение в кубе); бизнес-правила Planning — список по планам, вопросы правила с умолчаниями сервера и запуск, журнал заданий; сценарии расчёта Essbase — список, текст и запуск; переменные подстановки Essbase — прочитать и задать. Срезы и формы живут в листе и уходят в файл. Журнал сеанса — запросы и ответы сервера в отдельном окне.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/hyperion/hyperion.plsplug.json",
+   "размер": 350542,
+   "sha256": "be5bd6abee5d76e7fc0a6540404c5f1d5b4e9c649c524974999a9f1ec7e99cae",
+   "значок": "plugins/hyperion/icon.svg",
+   "права": {
+    "сеть": [
+     "{сервер}",
+     "{адрес}",
+     "{aps}",
+     "{planning}"
+    ],
+    "хранилище": true,
+    "читает": "выделение",
+    "вход": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Hyperion",
+    "описание": "Oracle Essbase and Hyperion Planning: one-link connection (as Smart View shared connections), cube slices over XMLA (Provider Services) with drill-down and drag-and-drop, MDX queries, saved forms and Planning forms with data entry, business rules with prompts and the job console over the Smart View protocol (REST Planning as a fallback), Essbase calc scripts and substitution variables.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "status-badge",
+   "имя": "Значок состояния",
+   "версия": "1.0.1",
+   "описание": "Рисует SVG-кружок по числу в клетке и кладёт его на лист объектом: данные остаются при картинке, двойной щелчок перечитывает клетку и перерисовывает значок.",
+   "категория": "Картинки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/status-badge/status-badge.plsplug.json",
+   "размер": 6903,
+   "sha256": "d1878e27ea62e500f70278f0c00b7cbe2a4b463911441912bfe9d940bf5f5090",
+   "значок": "plugins/status-badge/icon.svg",
+   "права": {
+    "читает": "лист"
+   },
+   "нужнаВерсия": "1.0",
+   "прежние": [
+    "значок-состояния"
+   ],
+   "en": {
+    "имя": "Status badge",
+    "описание": "Draws an SVG badge from the number in a cell and puts it on the sheet as a plugin object: double-click reopens it for editing.",
+    "категория": "Pictures"
+   }
+  },
+  {
+   "id": "icon-library",
+   "имя": "Библиотека значков",
+   "версия": "1.0",
+   "описание": "Сорок с лишним значков одним SVG каждый: сетка с поиском, выбранный кладётся на лист любым цветом и размером. Картинка векторная — не мылится ни при каком масштабе и в .xlsx уходит как есть.",
+   "категория": "Картинки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/icon-library/icon-library.plsplug.json",
+   "размер": 10324,
+   "sha256": "98657c5bc0d2f39e6668d5e44475d3e239fe4f60fb07474bdce00dd300d43a5e",
+   "значок": "plugins/icon-library/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Icon library",
+    "описание": "Over forty icons, one SVG each: a grid with search, the chosen one goes onto the sheet in any colour and size. Vector, so it stays sharp at any zoom and travels into .xlsx as it is.",
+    "категория": "Pictures"
+   }
+  },
+  {
+   "id": "qr-code",
+   "имя": "QR-код",
+   "версия": "1.1",
+   "описание": "Делает QR-код из текста или из значения клетки и кладёт его на лист картинкой SVG: чётко в любом масштабе. Версии 1–10, все четыре уровня стойкости, русский текст. Объектом — правится двойным щелчком.",
+   "категория": "Картинки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/qr-code/qr-code.plsplug.json",
+   "размер": 25799,
+   "sha256": "9d430bb912b23bbcd2353c9c59d74d157d138f2d073615dcd4567c4ceeb08a55",
+   "значок": "plugins/qr-code/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "QR code",
+    "описание": "Makes a QR code from text or from a cell value and puts it on the sheet as SVG - sharp at any zoom. Versions 1-10, all four correction levels, non-Latin text. As an object it can be edited again by double-click.",
+    "категория": "Pictures"
+   }
+  },
+  {
+   "id": "pomodoro",
+   "имя": "Помодоро",
+   "версия": "1.0",
+   "описание": "Таймер по методу «помидора»: работа, короткий и длинный перерыв, счёт сделанного. Живёт в потоке плагина — секунды тикают между нажатиями, а по желанию каждый помидор записывается строкой в лист учёта.",
+   "категория": "Работа",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/pomodoro/pomodoro.plsplug.json",
+   "размер": 9608,
+   "sha256": "57a6da399b8ebb6da52f0f7de41e13c7e5f44c65fc0fcfd9cad1a2e2a34938ed",
+   "значок": "plugins/pomodoro/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Pomodoro",
+    "описание": "A pomodoro timer: work, short and long break, and a count of what is done. It lives in the plugin thread, so the seconds tick between clicks, and each pomodoro can be logged as a row on a sheet.",
+    "категория": "Workflow"
+   }
+  },
+  {
+   "id": "yandex-translate",
+   "имя": "Переводчик (Яндекс)",
+   "версия": "1.0",
+   "описание": "Переводит выделенные клетки и абзацы через Translate API Яндекс Облака: на место, в соседний столбец или просто показать. Больше сотни языков, определение языка, порции по пределу сервиса. Ключ доступа хранится вне книги и в файл плагина не уходит.",
+   "категория": "Сервисы",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/yandex-translate/yandex-translate.plsplug.json",
+   "размер": 25937,
+   "sha256": "ccbf125ebf04128f6c0770e199deee154f9b10b263cb78f1e03bab30f40b568e",
+   "значок": "plugins/yandex-translate/icon.svg",
+   "права": {
+    "сеть": [
+     "https://translate.api.cloud.yandex.net",
+     "{сервер}"
+    ],
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Translator (Yandex)",
+    "описание": "Translates the selected cells through the Yandex Cloud Translate API: in place, into the next column, or just shown. Over a hundred languages, language detection, batching by the service limit. The access key is kept outside the workbook and never leaves in the plugin file.",
+    "категория": "Services"
+   }
+  },
+  {
+   "id": "doc-stats",
+   "имя": "Сведения о тексте",
+   "версия": "1.0",
+   "описание": "Считает то, чего нет в строке состояния: предложения и среднюю длину предложения, самые длинные абзацы, частые слова, число заголовков, таблиц и списков, объём в страницах по 1800 знаков. Может пересчитывать на ходу — по правке и по переходу курсора.",
+   "категория": "Документы",
+   "приложения": [
+    "документы"
+   ],
+   "файл": "plugins/doc-stats/doc-stats.plsplug.json",
+   "размер": 10438,
+   "sha256": "fe2d50d3773144c847790336b2bec4e5a9e6f08b25eaff801737f8203cc7be33",
+   "значок": "plugins/doc-stats/icon.svg",
+   "права": {
+    "хранилище": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Text statistics",
+    "описание": "Counts what the status bar has no room for: sentences and average sentence length, the longest paragraphs, frequent words, how many headings, tables and lists there are, and the volume in 1800-character pages. Can recount as you type and as the caret moves.",
+    "категория": "Documents"
+   }
+  },
+  {
+   "id": "doc-abbr",
+   "имя": "Сокращения",
+   "версия": "1.0",
+   "описание": "Собирает по документу аббревиатуры и сокращения с точкой, показывает, сколько раз каждое встретилось и где впервые, находит те, у которых нигде нет расшифровки, и вставляет «Перечень сокращений» таблицей — разделом, которого требует ГОСТ 7.32.",
+   "категория": "Документы",
+   "приложения": [
+    "документы"
+   ],
+   "файл": "plugins/doc-abbr/doc-abbr.plsplug.json",
+   "размер": 13542,
+   "sha256": "a3415faf62648ab56245a452031a52dc689b9258889695b25a25043dc1840b90",
+   "значок": "plugins/doc-abbr/icon.svg",
+   "права": {
+    "хранилище": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Abbreviations",
+    "описание": "Collects abbreviations and shortened forms across the document, shows how many times each occurs and where it first appears, finds the ones never spelled out anywhere, and inserts a \"List of abbreviations\" table - the section GOST 7.32 asks a report for.",
+    "категория": "Documents"
+   }
+  },
+  {
+   "id": "hello-plugin",
+   "имя": "Привет, мир",
+   "версия": "1.0",
+   "описание": "Образец для авторов плагинов: в одном файле — панель со всеми видами полей, окно, диалоги, чтение и запись клеток, группа на ленте, пункт меню, событие выделения, картинка и своя функция для формул.",
+   "категория": "Образцы",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/hello-plugin/hello-plugin.plsplug.json",
+   "размер": 12432,
+   "sha256": "b8ff2e20fe0620e8cface1bc377905cd4760c613f6887cd51a7f11a8d43e8fba",
+   "значок": "plugins/hello-plugin/icon.svg",
+   "права": {
+    "функции": true,
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Hello, world",
+    "описание": "A sample for plugin authors: one file with a panel using every kind of field, a window, dialogs, reading and writing cells, a ribbon group, a menu item, a selection event, a picture and a custom formula function.",
+    "категория": "Samples"
+   }
+  },
+  {
+   "id": "analysis-forecast",
+   "имя": "Анализ данных и прогноз",
+   "версия": "1.0",
+   "описание": "Пакет анализа в один щелчок: описательная статистика и корреляции формулами листа, гистограмма с диаграммой, линейная регрессия (коэффициенты, R², p-значения, остатки), t-тесты и дисперсионный анализ, прогноз ряда методом Хольта — Винтерса с сезонностью, коридором и диаграммой. Всё считается в книге, данные никуда не уходят.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/analysis-forecast/analysis-forecast.plsplug.json",
+   "размер": 79278,
+   "sha256": "a624cc982932e920e60c373c03f5bfabe6b00ee62554c0ef9fa0af3e3bf3581e",
+   "значок": "plugins/analysis-forecast/icon.svg",
+   "права": {
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Data analysis and forecast",
+    "описание": "An analysis pack in one click: descriptive statistics and correlations as sheet formulas, a histogram with a chart, linear regression (coefficients, R-squared, p-values, residuals), t-tests and one-way ANOVA, and a Holt-Winters forecast with seasonality, a confidence band and a chart. Everything is computed in the book; the data goes nowhere.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "clickhouse-xmla",
+   "имя": "ClickHouse и OLAP-кубы",
+   "версия": "1.0",
+   "описание": "Запросы к ClickHouse прямо из таблицы: редактор SQL с подсветкой, параметры из клеток, результат на лист и обновление одной кнопкой. Подключение к OLAP-кубам по XMLA: каталоги, кубы и меры списком, отчёт «строки × столбцы» и провал в измерение двойным щелчком.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/clickhouse-xmla/clickhouse-xmla.plsplug.json",
+   "размер": 56017,
+   "sha256": "a06c4b70a76d08a472ba693200d10480b3943180c04e92abd9bf6656bf21835c",
+   "значок": "plugins/clickhouse-xmla/icon.svg",
+   "права": {
+    "сеть": [
+     "{chАдрес}",
+     "{olapАдрес}"
+    ],
+    "хранилище": true,
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "ClickHouse and OLAP cubes",
+    "описание": "ClickHouse queries straight from the sheet: a highlighted SQL editor, parameters taken from cells, the result on the sheet and a one-click refresh. OLAP cubes over XMLA: catalogs, cubes and measures in lists, a rows-by-columns report and drill-down by double-click.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "fin-calc",
+   "имя": "Финансовые калькуляторы",
+   "версия": "1.0",
+   "описание": "Пени по доле ключевой ставки с разбивкой по периодам, проценты по ст. 395 ГК РФ, график кредита (аннуитет и дифференцированный, досрочные погашения), вклад с капитализацией и НДС. Расчёт ложится на лист формулами — видно, как посчитано. История ключевой ставки — внутри плагина.",
+   "категория": "Счёт",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/fin-calc/fin-calc.plsplug.json",
+   "размер": 48365,
+   "sha256": "efeca80577cfce52e47c428e3bf2e297f83066b3821ca878ea80cf7e8358389d",
+   "значок": "plugins/fin-calc/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Financial calculators",
+    "описание": "Late-payment penalties at a share of the key rate with a breakdown by period, interest under article 395 of the Civil Code, a loan schedule (annuity or differentiated, early repayments), a deposit with capitalisation and VAT. The result goes onto the sheet as formulas, so the calculation is visible. The key-rate history is built in.",
+    "категория": "Calculation"
+   }
+  },
+  {
+   "id": "timesheet",
+   "имя": "Табель и графики смен",
+   "версия": "1.0",
+   "описание": "Табель учёта рабочего времени по образцу Т-13 на месяц и графики смен (5/2, 2/2, сутки через трое, день-ночь-отсыпной, свой цикл) с нормой часов по производственному календарю РФ. Коды явок — выбором из списка, итоги и отклонения от нормы — формулами.",
+   "категория": "Работа",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/timesheet/timesheet.plsplug.json",
+   "размер": 42441,
+   "sha256": "f04742bb04ca7def932b643490bf0a968f736f561e8c94bebe5cc4065bdc3be2",
+   "значок": "plugins/timesheet/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Timesheet and shift rosters",
+    "описание": "A monthly time sheet in the T-13 layout and shift rosters (5/2, 2/2, one day on and three off, day-night-rest, your own cycle) with working-hour norms from the Russian production calendar. Attendance codes are picked from a list; totals and deviations are formulas.",
+    "категория": "Workflow"
+   }
+  },
+  {
+   "id": "barcodes-labels",
+   "имя": "Штрихкоды и этикетки",
+   "версия": "1.0",
+   "описание": "Штрихкоды EAN-13, EAN-8, Code 128 и DataMatrix (в том числе GS1 для маркировки) картинкой рядом с клетками, проверка контрольных цифр EAN. Этикетки и ценники из таблицы товаров — точно по размеру листов с наклейками, печать настраивается сама.",
+   "категория": "Работа",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/barcodes-labels/barcodes-labels.plsplug.json",
+   "размер": 48008,
+   "sha256": "221f12ff06c92df3346572a6040d97209b26aacf0604ca242013089d57329831",
+   "значок": "plugins/barcodes-labels/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Barcodes and labels",
+    "описание": "EAN-13, EAN-8, Code 128 and DataMatrix barcodes (including GS1 for product marking) as pictures next to the cells, with EAN check-digit validation. Labels and price tags from a product table, sized exactly to sticker sheets; printing is set up automatically.",
+    "категория": "Workflow"
+   }
+  },
+  {
+   "id": "messenger-notify",
+   "имя": "Уведомления в мессенджеры",
+   "версия": "1.0",
+   "описание": "Сообщения из таблицы в Telegram, VK Teams или на свой адрес (webhook): выделенная таблица по кнопке — или само, по правилу «если остаток меньше минимума — написать». Плагин фоновый: правила работают, пока книга открыта; о каждой строке сообщает один раз. Токен бота остаётся только в этом браузере.",
+   "категория": "Сервисы",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/messenger-notify/messenger-notify.plsplug.json",
+   "размер": 31601,
+   "sha256": "11beec2fa87b3472dbd6044e2482d44c75584ee7c6231af6dff77160715902a3",
+   "значок": "plugins/messenger-notify/icon.svg",
+   "права": {
+    "сеть": [
+     "https://api.telegram.org/",
+     "{адрес}"
+    ],
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Messenger notifications",
+    "описание": "Messages from the sheet to Telegram, VK Teams or your own webhook: the selected table on a button, or automatically by a rule such as \"if stock drops below the minimum, write\". A background plugin: rules work while the book is open and report each row once. The bot token stays in this browser only.",
+    "категория": "Services"
+   }
+  },
+  {
+   "id": "pii-scan",
+   "имя": "Персональные данные",
+   "версия": "1.0",
+   "описание": "Находит в таблице или документе персональные данные — телефоны, e-mail, СНИЛС и ИНН с проверкой контрольных чисел, номера карт, счета физлиц, паспорта, даты рождения, ФИО, адреса — и обезличивает их маской, условным кодом или удалением. Всё внутри компьютера, найденное нигде не сохраняется.",
+   "категория": "Проверки",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/pii-scan/pii-scan.plsplug.json",
+   "размер": 34852,
+   "sha256": "6a8912b3aba65226fda4e34d7af32a96bfc0bcaf219a12e83ae9e1e44b6313db",
+   "значок": "plugins/pii-scan/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Personal data",
+    "описание": "Finds personal data in a sheet or a document - phone numbers, e-mails, SNILS and INN with check digits, card numbers, personal accounts, passports, birth dates, full names, addresses - and anonymises it with a mask, a code or by deleting. Everything stays on the computer; findings are never stored.",
+    "категория": "Validation"
+   }
+  },
+  {
+   "id": "ru-map",
+   "имя": "Карта регионов",
+   "версия": "1.0",
+   "описание": "Картограмма России по таблице «регион — число»: 89 субъектов РФ на плиточной схеме, цвет по значению, легенда. Узнаёт названия в разных написаниях и коды субъектов, показывает несопоставленное. Карта — объект на листе: двойной щелчок перерисует её по свежим данным.",
+   "категория": "Картинки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/ru-map/ru-map.plsplug.json",
+   "размер": 36581,
+   "sha256": "508fe5a6f49545cdbe2369610f3b7abd73ebc5d8d1859751fba354134a546eae",
+   "значок": "plugins/ru-map/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Map of Russian regions",
+    "описание": "A choropleth of Russia from a \"region - number\" table: 89 regions on a tile map, colour by value and a legend. Recognises different spellings and region codes and lists what did not match. The map is an object on the sheet: double-click redraws it from fresh data.",
+    "категория": "Pictures"
+   }
+  },
+  {
+   "id": "print-forms",
+   "имя": "Печатные формы",
+   "версия": "1.0",
+   "описание": "Счёт на оплату с QR-кодом для оплаты в приложении банка, акт об оказании услуг, товарная накладная ТОРГ-12 и УПД (статус 1 и 2) — из таблицы документов, без учётной программы. Книга-образец с реквизитами и проверками данных, сумма прописью, НДС 22 %, печать настроена сама. Для Документов — шаблоны слияния.",
+   "категория": "Шаблоны",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/print-forms/print-forms.plsplug.json",
+   "размер": 76471,
+   "sha256": "42bb7f2dfc151eed9f0e90acb600c3dd77cbd13b2b5e4d92db639be9f3626c4a",
+   "значок": "plugins/print-forms/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Printed forms",
+    "описание": "An invoice with a payment QR code for banking apps, a service acceptance act, the TORG-12 delivery note and the universal transfer document (status 1 and 2) - from a table of documents, without accounting software. A sample book with company details and validation, amount in words, 22% VAT, printing set up. Mail-merge templates for Documents.",
+    "категория": "Templates"
+   }
+  },
+  {
+   "id": "templates-business",
+   "имя": "Галерея деловых шаблонов",
+   "версия": "1.0",
+   "описание": "Готовые деловые документы и таблицы. В Документах: приказ, служебная записка и письмо по ГОСТ Р 7.0.97-2016, доверенность, договоры поставки и оказания услуг, коммерческое предложение с итогами, заявление на отпуск. В Таблицах: бюджет отдела, план-график закупок, реестр договоров, платёжный календарь, расчёт КП, учёт времени. Реквизиты подставляются сами.",
+   "категория": "Шаблоны",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/templates-business/templates-business.plsplug.json",
+   "размер": 68194,
+   "sha256": "8941f4d0ec7c0084c5bba42631fe95ece0d15ff4750d76b9a31dff2cc0ea50e7",
+   "значок": "plugins/templates-business/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Business templates",
+    "описание": "Ready business documents and tables. In Documents: an order, a memo and a letter per GOST R 7.0.97-2016, a power of attorney, supply and service contracts, a commercial offer with totals, a leave application. In Tables: a department budget, a procurement plan, a contract register, a payment calendar, an offer calculation, time tracking. Company details are filled in.",
+    "категория": "Templates"
+   }
+  },
+  {
+   "id": "templates-life",
+   "имя": "Шаблоны для жизни",
+   "версия": "1.0",
+   "описание": "Готовые таблицы для дома: семейный бюджет на месяц и на год, трекер привычек, планер недели, список покупок, план поездки, учёт ремонта, дневник тренировок, цели на год, подписки и регулярные платежи. С формулами, списками выбора, подсветкой и диаграммами.",
+   "категория": "Шаблоны",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/templates-life/templates-life.plsplug.json",
+   "размер": 45014,
+   "sha256": "8e223bfc4d3a1941bfe8174d638880b68501b163319c1d675a7cfa1622b7ba77",
+   "значок": "plugins/templates-life/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Templates for life",
+    "описание": "Ready tables for home: a family budget for the month and for the year, a habit tracker, a weekly planner, a shopping list, a trip plan, renovation costs, a workout log, goals for the year, subscriptions and recurring payments. With formulas, pick lists, highlighting and charts.",
+    "категория": "Templates"
+   }
+  },
+  {
+   "id": "puls-academy",
+   "имя": "Академия Пульса: формулы",
+   "версия": "1.0",
+   "описание": "Курс «Формулы с нуля» прямо в таблице: двенадцать уроков от СУММ до СУММЕСЛИМН, ВПР, ЕСЛИ, дат и абсолютных ссылок. Урок кладёт данные на лист, проверяет вашу формулу — и значение, и саму запись, — подсказывает по шагам и выдаёт значки. Каждый день — новая задача дня.",
+   "категория": "Обучение",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/puls-academy/puls-academy.plsplug.json",
+   "размер": 43237,
+   "sha256": "56bb43e182c792aaa2f5e3249548b6c9aa9ef8378dfc61d15b332f9705473237",
+   "значок": "plugins/puls-academy/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Puls Academy: formulas",
+    "описание": "A \"Formulas from scratch\" course right in the sheet: twelve lessons from SUM to SUMIFS, VLOOKUP, IF, dates and absolute references. A lesson puts data on the sheet, checks your formula - both the value and how it is written - gives step-by-step hints and awards badges. A new daily challenge every day.",
+    "категория": "Learning"
+   }
+  },
+  {
+   "id": "five-letters",
+   "имя": "Слово дня",
+   "версия": "1.0",
+   "описание": "Угадайте слово из пяти букв за шесть попыток — прямо на листе. Буквы набираются в клетки, клетки подсказывают цветом: зелёная — буква на своём месте, жёлтая — есть в слове, серая — нет. Одно слово дня для всех, серия дней, итог цветными квадратиками для коллег; есть и свободная игра.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/five-letters/five-letters.plsplug.json",
+   "размер": 67687,
+   "sha256": "708906a012c70827c486106698983f7ef71e19ea270f04d473278a14674b44e6",
+   "значок": "plugins/five-letters/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Word of the day",
+    "описание": "Guess a five-letter Russian word in six tries, right on the sheet. Letters are typed into cells and coloured: green - right place, yellow - in the word, grey - not there. One word a day for everyone, a streak, a coloured-squares result to share; free play too.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "sudoku",
+   "имя": "Судоку",
+   "версия": "1.0",
+   "описание": "Судоку на листе: генератор головоломок с единственным решением, три уровня и «судоку дня» — одна задача на всех. Цифры набираются прямо в клетки, повторы подсвечиваются, подсказка открывает клетку и объясняет приём; несколько цифр в клетке — пометки.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/sudoku/sudoku.plsplug.json",
+   "размер": 27745,
+   "sha256": "dc4a57ee5784aa77bbb53790eac35b3b818040d80bcbb51cf0bca45e4c71395b",
+   "значок": "plugins/sudoku/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Sudoku",
+    "описание": "Sudoku on the sheet: a generator of puzzles with a unique solution, three levels and a \"sudoku of the day\" shared by everyone. Digits are typed into cells, repeats are highlighted, a hint opens a cell and explains the technique; several digits in a cell are pencil marks.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "minesweeper",
+   "имя": "Сапёр",
+   "версия": "1.0",
+   "описание": "Классический сапёр прямо на листе: щелчок открывает клетку, правая кнопка ставит флажок, цифра — сколько мин рядом. Три уровня, таймер, рекорды; первая клетка всегда безопасна, незаконченная партия сохраняется в книге.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/minesweeper/minesweeper.plsplug.json",
+   "размер": 26159,
+   "sha256": "6e3487c0084d9b89d0de5d6179e33341f7d8badae0bb29b3d2d69044f384f867",
+   "значок": "plugins/minesweeper/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Minesweeper",
+    "описание": "Classic minesweeper on the sheet: click opens a cell, right click places a flag, a number tells how many mines are around. Three levels, a timer and records; the first cell is always safe and an unfinished game is saved in the book.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "nonograms",
+   "имя": "Японские кроссворды",
+   "версия": "1.0",
+   "описание": "Японские кроссворды (нонограммы) на клетках листа: по числам у строк и столбцов закрасьте клетки — получится картинка. 20 своих задач от 5×5 до 15×15, случайные задачи, подсказка с объяснением и проверка ошибок. Свой рисунок на листе превращается в задачу одной кнопкой.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/nonograms/nonograms.plsplug.json",
+   "размер": 50240,
+   "sha256": "e3f5948e98d9b171db258c5b9b18d6f3dc5c6ea44ca8f783c46537a17b3ac1e4",
+   "значок": "plugins/nonograms/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Nonograms",
+    "описание": "Nonograms (picture crosswords) on sheet cells: shade cells by the numbers at rows and columns to reveal a picture. Twenty built-in puzzles from 5x5 to 15x15, random puzzles, an explained hint and error check. Your own drawing on the sheet becomes a puzzle with one button.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "cell-puzzles",
+   "имя": "Головоломки на клетках",
+   "версия": "1.0",
+   "описание": "Пять головоломок, где поле — сам лист: пятнашки, «Погасите свет», «Заливка», лабиринт и Сокобан. В лабиринте и Сокобане герой — курсор таблицы: его ведут стрелки, в стены он не проходит. Двенадцать своих уровней Сокобана, подсказки, рекорды; партия сохраняется в книге.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/cell-puzzles/cell-puzzles.plsplug.json",
+   "размер": 49348,
+   "sha256": "b84002c0f67f3728bbad8da7f4b38bcbd8101dc30f73c1c67a6523c5a1f5e7a4",
+   "значок": "plugins/cell-puzzles/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Cell puzzles",
+    "описание": "Five puzzles where the board is the sheet itself: the 15 puzzle, Lights Out, Flood fill, a maze and Sokoban. In the maze and Sokoban the hero is the cell cursor moved by the arrow keys. Twelve Sokoban levels, hints and records; the game is saved in the book.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "battleship",
+   "имя": "Морской бой",
+   "версия": "1.0",
+   "описание": "Морской бой против компьютера прямо на листе: ваш флот слева, поле противника справа, выстрел — щелчок по клетке. Классический флот из десяти кораблей, отметки вокруг потопленных ставятся сами. Два уровня компьютера, счёт побед; бой сохраняется в книге.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/battleship/battleship.plsplug.json",
+   "размер": 27040,
+   "sha256": "a98958753d976e9c363d1ebe6e05abd04ad12a987201a431afb2fb9c8db7fc3d",
+   "значок": "plugins/battleship/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Battleship",
+    "описание": "Battleship against the computer on the sheet: your fleet on the left, the enemy field on the right, a shot is a click on a cell. The classic ten-ship fleet, marks around sunk ships are placed automatically. Two computer levels and a score; the battle is saved in the book.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "gomoku",
+   "имя": "Пять в ряд",
+   "версия": "1.0",
+   "описание": "«Пять в ряд» на поле 15×15 прямо на листе: против компьютера (обычный и сильный), вдвоём за одним компьютером или вдвоём по общей книге в совместной работе — ход коллеги приходит правкой книги. Счёт побед, ход назад.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/gomoku/gomoku.plsplug.json",
+   "размер": 29436,
+   "sha256": "a7d8a9e1064ad9656b1525c1f2605006db0b1549a4aa40d699820e51717d84c8",
+   "значок": "plugins/gomoku/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Five in a row",
+    "описание": "Five in a row on a 15x15 board on the sheet: against the computer (normal and strong), two players at one computer, or two players over a shared book in co-editing - the partner's move arrives as a book edit. Win score and undo.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "logic-grid",
+   "имя": "Задачи Эйнштейна",
+   "версия": "1.0",
+   "описание": "Логические задачи «кто где живёт»: условия, сетка для пометок «✓ — ✕» и таблица ответа со списками прямо на листе. Каждая задача составляется заново и решается однозначно; подсказка называет условие, которое сейчас продвигает решение, и что из него следует.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/logic-grid/logic-grid.plsplug.json",
+   "размер": 47528,
+   "sha256": "4c814811edd759e2bb57e3ab4326ae75c6e1804068fcf5ac4a34a08e1d1615e2",
+   "значок": "plugins/logic-grid/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Einstein puzzles",
+    "описание": "Logic puzzles of the \"who lives where\" kind: clues, a grid for check and cross marks and an answer table with pick lists, right on the sheet. Each puzzle is generated anew and has a single solution; a hint names the clue that moves the solution forward and what follows from it.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "crossword-maker",
+   "имя": "Кроссворды и филворды",
+   "версия": "1.0",
+   "описание": "Кроссворд из своего списка «слово — определение»: сетка с номерами для печати, вопросы по горизонтали и вертикали и сетка с ответами. Филворд — слова, спрятанные в сетке букв. Для уроков, тренингов и праздников; что не поместилось, плагин называет.",
+   "категория": "Обучение",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/crossword-maker/crossword-maker.plsplug.json",
+   "размер": 28021,
+   "sha256": "bc14c534932b573b0ac9f59c770ed08130794c0d6020891cb48800267aa8b3a5",
+   "значок": "plugins/crossword-maker/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Crosswords and word searches",
+    "описание": "A crossword from your own \"word - clue\" list: a numbered grid for printing, across and down clues, and an answer grid. A word search hides the words in a grid of letters. For lessons, trainings and parties; whatever did not fit is named.",
+    "категория": "Learning"
+   }
+  },
+  {
+   "id": "random-draw",
+   "имя": "Жребий и команды",
+   "версия": "1.0",
+   "описание": "Честный жребий из выделенного списка с «барабаном», деление на команды поровну (и по ролям), Тайный Санта с карточками для вырезания, карточки русского лото и бинго с бочонками. Результат — на листе рядом со списком, с отметкой времени.",
+   "категория": "Работа",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/random-draw/random-draw.plsplug.json",
+   "размер": 31329,
+   "sha256": "f0aa3742d7938e5a2cda407de90c65ce23dbce7d47c71f31dbafb25e7dd6eb73",
+   "значок": "plugins/random-draw/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Draws and teams",
+    "описание": "A fair draw from the selected list with a spinning \"drum\", splitting into equal teams (and by role), Secret Santa with cut-out cards, Russian lotto and bingo cards with barrels. The result goes onto the sheet next to the list, with a timestamp.",
+    "категория": "Workflow"
+   }
+  },
+  {
+   "id": "what-if-solver",
+   "имя": "Что если: подбор, сценарии, поиск решения",
+   "версия": "1.0",
+   "описание": "Подбор параметра (какой должна быть цена, чтобы прибыль стала нулём), таблица подстановки по одному и двум параметрам, сценарии с отчётом и поиск решения: линейные и целочисленные модели — симплекс-методом и ветвями и границами (план производства, закупка в бюджете, график смен), нелинейные — спуском. Модель считается прогонами без правки книги; не нашлось — так и сказано.",
+   "категория": "Счёт",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/what-if-solver/what-if-solver.plsplug.json",
+   "размер": 70475,
+   "sha256": "d6af2fcaf1eb7719a03f217214876494f31bf7fc7af923223cf553156fa84761",
+   "значок": "plugins/what-if-solver/icon.svg",
+   "права": {},
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Goal seek and solver",
+    "описание": "Goal seek for one cell, a linear and integer optimisation solver with constraints, scenarios side by side and a Monte Carlo risk run with a histogram - all by the book's own formulas, without changing the book until you keep the result.",
+    "категория": "Calculation"
+   }
+  },
+  {
+   "id": "data-import",
+   "имя": "Загрузка и преобразование данных",
+   "версия": "1.0",
+   "описание": "Конструктор загрузки: CSV, JSON и XML из файла, папки однотипных файлов или по адресу, книги и выделенные таблицы → шаги (фильтр, столбцы, типы, разбиение, отмена свёртки, группировка, подтягивание из другой таблицы, новый столбец выражением) → лист. Шаги хранятся в книге, «Обновить» повторяет их; сменилась шапка источника — шаг скажет об этом словами.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/data-import/data-import.plsplug.json",
+   "размер": 68646,
+   "sha256": "825d98cc0b5c37de90bfc3a6003d65a3ef58644f4e525d8b0327c941ed75ea33",
+   "значок": "plugins/data-import/icon.svg",
+   "права": {
+    "сеть": [
+     "{адрес}"
+    ],
+    "читает": "ничего",
+    "файлы": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Data import and cleanup",
+    "описание": "CSV, JSON, XML, another book or a whole folder of files into one table: encoding and separators found automatically, then steps like in a query editor - filter, split, merge, unpivot, group, deduplicate. The steps are remembered, so next month the same report is rebuilt with one button.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "pdf-tables",
+   "имя": "Таблицы из PDF",
+   "версия": "1.0",
+   "описание": "Таблица из PDF — в лист или в документ: выписки, прайс-листы, отчёты, сметы. Разметку плагин находит сам — по линиям таблицы или по просветам между столбцами текста; несколько страниц склеивает в одну таблицу без повторов шапки, переносы внутри клеток собирает. Числа и даты — значениями. В просмотре страницы можно поставить свои границы столбцов и отметить, где таблица начинается и кончается. Файл читается на этом компьютере, никуда не отправляется. Сканы (страницы-картинки без текста) плагин не распознаёт.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/pdf-tables/pdf-tables.plsplug.json",
+   "размер": 104752,
+   "sha256": "f4d49c6776c545a8127439cdb9442a5f903fe5bd448e68fd41a39a4819859aef",
+   "значок": "plugins/pdf-tables/icon.svg",
+   "права": {
+    "читает": "ничего",
+    "файлы": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Tables from PDF",
+    "описание": "A table from a PDF into a sheet or a document: bank statements, price lists, reports. Columns are found by ruling lines or by gaps in the text; pages are glued into one table, wrapped cells joined, numbers and dates become values. A page preview lets you set your own column boundaries. Works offline.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "bank-statements",
+   "имя": "Банковские выписки и обмен с 1С",
+   "версия": "1.0",
+   "описание": "Выписка банка в формате обмена с 1С (kl_to_1c.txt, windows-1251 или UTF-8) — в таблицу операций: приход и расход, контрагент, ИНН, назначение, НДС, свод по контрагентам и сверка с остатками выписки. Реестр платёжных поручений — файлом для загрузки в банк, с проверкой ИНН, БИК и ключа счёта. Товары, цены и остатки CommerceML — в таблицу.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/bank-statements/bank-statements.plsplug.json",
+   "размер": 53045,
+   "sha256": "c23bda68d9000cdcdb4a71bac9381a0311fcce87fb5b7f4a0b60d13a84eb90a6",
+   "значок": "plugins/bank-statements/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего",
+    "файлы": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Bank statements and 1C exchange",
+    "описание": "A bank statement in the 1C exchange format into a table of operations with counterparties, tax IDs and VAT, reconciled with the statement totals; a payment register exported as a file for the bank with checks of tax ID, bank code and account key; CommerceML goods, prices and stock into a table.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "moex",
+   "имя": "Котировки Мосбиржи и портфель",
+   "версия": "1.0",
+   "описание": "Цены акций, облигаций и фондов Московской биржи из открытого ISS API: функции в клетках =КОТИРОВКА(\"SBER\") (цена, изменение, НКД, купон, доходность, погашение), =ЦЕНА_НА_ДАТУ и =ДИВИДЕНДЫ, таблица котировок, история с графиком, выплаты и шаблон учёта портфеля по классам активов. Данные — с задержкой биржи; не инвестиционная рекомендация.",
+   "категория": "Сервисы",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/moex/moex.plsplug.json",
+   "размер": 35745,
+   "sha256": "4031758a4afa5c3d1756ec637b0f3fa13df3d78ba6b69372ddfd67be8bb08d56",
+   "значок": "plugins/moex/icon.svg",
+   "права": {
+    "сеть": [
+     "https://iss.moex.com",
+     "{сервер}"
+    ],
+    "хранилище": true,
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Moscow Exchange quotes and portfolio",
+    "описание": "Formulas for quotes, prices on a date and dividends from the Moscow Exchange, a quotes table under the selection, price history with a chart, dividends and bond coupons, and a portfolio template with asset classes and returns.",
+    "категория": "Services"
+   }
+  },
+  {
+   "id": "ocr",
+   "имя": "Распознавание текста и таблиц",
+   "версия": "1.0",
+   "описание": "Текст и таблицы с картинки — прямо на этом компьютере, без интернета и внешних служб: снимок экрана, фото документа, картинка на листе или в документе, скан в PDF. Текст ложится абзацами в документ или строками в лист; таблица — по клеткам, числа и даты значениями, сомнительные места подсвечены. Русский и английский. Движок распознавания Tesseract (свободная лицензия Apache 2.0) и языковые данные ставятся вместе с плагином — около 9 МБ, один раз.",
+   "категория": "Текст",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/ocr/ocr.plsplug.json",
+   "размер": 78955,
+   "sha256": "def15ebd702140c1933b64d45f24a099c31e2428e3d6330d8cb68d28c36e6d6d",
+   "значок": "plugins/ocr/icon.svg",
+   "права": {
+    "читает": "ничего",
+    "файлы": true,
+    "ресурсы": {
+     "число": 4,
+     "объём": 8628600
+    }
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Text and table recognition",
+    "описание": "Text and tables from a picture right on this computer, with no internet and no outside services: a screenshot, a photo of a document, a picture in the book or document, a scanned PDF. Russian and English. The Tesseract engine (Apache 2.0) and language data come with the plugin, about 9 MB, once.",
+    "категория": "Text"
+   }
+  },
+  {
+   "id": "style-check",
+   "имя": "Проверка стиля",
+   "версия": "1.1",
+   "описание": "Подчёркивает в тексте канцелярит («в целях осуществления», «является», «данный»), штампы, «воду» и слова-паразиты, разговорные слова, страдательный залог, цепочки отглагольных существительных, длинные предложения, повторы рядом и ошибки типографики. «Улучшить» правит сам то, что можно поправить надёжно: «оказать помощь» → «помочь», «принять участие» → «участвовать» в нужной форме, «в связи с тем, что» → «потому что», «данный» → «этот», «щас», «ок», «дедлайн» → «сейчас», «хорошо», «срок»; длинное предложение — на два. Всё — одной операцией «Отменить»; остальное остаётся пометками с готовыми вариантами. Оценка текста по десятибалльной шкале. Правила работают без сети; орфографию можно проверить своим сервером проверки в контуре или Яндекс.Спеллером.",
+   "категория": "Документы",
+   "приложения": [
+    "документы"
+   ],
+   "файл": "plugins/style-check/style-check.plsplug.json",
+   "размер": 94673,
+   "sha256": "c1a39a6047c62620dd93242a6367b736fb89bf0a4446382824cec9cedba967d0",
+   "значок": "plugins/style-check/icon.svg",
+   "права": {
+    "сеть": [
+     "{сервер}",
+     "https://speller.yandex.net"
+    ],
+    "хранилище": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Style check",
+    "описание": "Underlines bureaucratese, clichés, filler words, passive voice, chains of verbal nouns, long sentences, repeated words and typography slips right in the text. A click shows advice and a one-button fix. \"Improve\" fixes on its own what can be fixed safely — split predicates turned into one verb in the right form, wordy connectives, \"this\" instead of bureaucratic \"the said\", chat slang into business words, overlong sentences split in two — as a single Undo step; the rest stays underlined with ready-made variants. Russian texts. Spelling via your own checking server, optionally.",
+    "категория": "Documents"
+   }
+  },
+  {
+   "id": "gost-check",
+   "имя": "ГОСТ-оформление: список литературы и нормоконтроль",
+   "версия": "1.0",
+   "описание": "Список литературы по ГОСТ Р 7.0.100-2018: карточка источника (книга, статья, сборник, сайт, закон, стандарт, диссертация) или поиск по DOI и ISBN — готовая запись, добавление в список, ссылка [N] в текст, упорядочение по алфавиту или по порядку ссылок с перенумерацией ссылок в тексте. Нормоконтроль отчёта по ГОСТ 7.32-2017: поля, шрифт, интервал, абзацный отступ, нумерация страниц, структурные элементы, заголовки и нумерация разделов, подписи рисунков и таблиц, ссылки на них и на источники, перечень сокращений. Замечания подчёркиваются в тексте; оформление исправляется одной кнопкой.",
+   "категория": "Документы",
+   "приложения": [
+    "документы"
+   ],
+   "файл": "plugins/gost-check/gost-check.plsplug.json",
+   "размер": 65436,
+   "sha256": "1ed70cc9f869635fd5f4354668f47e7e65d8fd0cf2e1f0c6e714a830c1ffabda",
+   "значок": "plugins/gost-check/icon.svg",
+   "права": {
+    "сеть": [
+     "https://api.crossref.org",
+     "https://openlibrary.org"
+    ]
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "GOST formatting: references and compliance check",
+    "описание": "References by GOST R 7.0.100-2018 from a source card or a DOI/ISBN lookup, citations [N] in the text, sorting with renumbering. A compliance check of a report by GOST 7.32-2017: margins, font, spacing, indents, page numbers, required sections, headings, figure and table captions; one-button fix.",
+    "категория": "Documents"
+   }
+  },
+  {
+   "id": "watermark",
+   "имя": "Подложка, грифы и заверение копий",
+   "версия": "1.0",
+   "описание": "Подложка под текстом каждой страницы: «ЧЕРНОВИК», «ОБРАЗЕЦ», «КОПИЯ», «КОНФИДЕНЦИАЛЬНО», своя надпись или картинка (логотип, печать). Гриф «Для служебного пользования», «Конфиденциально» или «Коммерческая тайна» с номером экземпляра — в колонтитуле или первым абзацем; выпуск пронумерованных экземпляров архивом. Отметка о заверении копии по ГОСТ Р 7.0.97-2016: «Верно», должность, подпись, дата, где подлинник. Всё уходит в .docx, .odt и печать.",
+   "категория": "Документы",
+   "приложения": [
+    "документы"
+   ],
+   "файл": "plugins/watermark/watermark.plsplug.json",
+   "размер": 23397,
+   "sha256": "3e80fdec7413fe0ed287d7fde6b9810a64072d335db1742aa885fe2a615ec805",
+   "значок": "plugins/watermark/icon.svg",
+   "права": {
+    "хранилище": true,
+    "файлы": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Watermarks, classification and certified copies",
+    "описание": "A watermark under the text of every page (DRAFT, SAMPLE, CONFIDENTIAL, your own text or a picture), a classification mark with the copy number in the header or on the first page, numbered copies as an archive, and the \"certified true copy\" mark by GOST R 7.0.97-2016.",
+    "категория": "Documents"
+   }
+  },
+  {
+   "id": "e-signature",
+   "имя": "Электронная подпись",
+   "версия": "1.0",
+   "описание": "Подписать документ или книгу квалифицированной электронной подписью (CAdES-BES) средствами КриптоПро CSP и его расширения для браузера: откреплённая подпись .sig рядом с файлом или присоединённая; документ и подпись — одним архивом. В Документах — отметка «Документ подписан электронной подписью» с владельцем и сроком сертификата. Проверка присланной подписи: верна ли, кто подписал, когда. Ключ и PIN-код плагин не видит — их спрашивает само средство подписи; каждую подпись человек подтверждает в окне приложения.",
+   "категория": "Документы",
+   "приложения": [
+    "документы",
+    "таблицы"
+   ],
+   "файл": "plugins/e-signature/e-signature.plsplug.json",
+   "размер": 18657,
+   "sha256": "f909e08d9a0cc74870b87218310e62ef32d666a596ffb15df9497db6d48aca23",
+   "значок": "plugins/e-signature/icon.svg",
+   "права": {
+    "хранилище": true,
+    "подпись": true,
+    "файлы": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Electronic signature",
+    "описание": "Sign a document or a book with a qualified electronic signature (CAdES-BES) through the CryptoPro CSP browser plug-in: a detached .sig next to the file or an attached one, both in one archive; a \"signed electronically\" stamp in the document; checking a received signature.",
+    "категория": "Documents"
+   }
+  },
+  {
+   "id": "pdf-edit",
+   "имя": "Правка PDF",
+   "версия": "1.0",
+   "описание": "PDF — документом для правки: текст страниц собирается в абзацы, заголовки и списки, таблицы становятся таблицами, картинки и ссылки остаются на своих местах; полужирный, курсив, кегль и цвет сохраняются. Колонки читаются по порядку, колонтитулы и номера страниц убираются из текста и по желанию переносятся в колонтитулы документа. Дальше документ правится как обычный и сохраняется в .plsd, .docx или .odt. Файл читается на этом компьютере и никуда не отправляется. Сканы (страницы-картинки без текста) плагин не распознаёт.",
+   "категория": "Документы",
+   "приложения": [
+    "документы"
+   ],
+   "файл": "plugins/pdf-edit/pdf-edit.plsplug.json",
+   "размер": 131453,
+   "sha256": "e34a4d77174c6f16029f464160f5a66902e16fa4a85d63622010c92cde93bde9",
+   "значок": "plugins/pdf-edit/icon.svg",
+   "права": {
+    "файлы": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "PDF editing",
+    "описание": "A PDF as a document for editing: page text becomes paragraphs, headings and lists, tables become tables, pictures and links stay in place; bold, italic, size and colour are kept. Columns are read in order; running headers and page numbers are removed from the text and can go into the document headers. Then the document is edited as usual and saved as .plsd, .docx or .odt. The file is read on this computer and is not sent anywhere. Scans (pages that are pictures without text) are not recognised by this plugin.",
+    "категория": "Documents"
+   }
+  },
+  {
+   "id": "project-trackers",
+   "имя": "Проекты и трекеры задач",
+   "версия": "1.0",
+   "описание": "Связь плана с трекером задач: Jira, YouTrack, Яндекс Трекер, Kaiten, Redmine. Задачи спринта, выделенные или все уходят в трекер (название, описание со сроками плана, срок, оценка в часах); уже связанные — обновляются. Обратно приходят статусы и потраченные часы: «готово» и «статус» задач плана меняются одной операцией отмены. Отчёт отклонений: просрочка, срок в трекере позже плана, перерасход часов — в панели и файлом CSV. Связи задач хранятся в самом проекте, ключ доступа — только в этом браузере.",
+   "категория": "Проекты",
+   "приложения": [
+    "проекты"
+   ],
+   "файл": "plugins/project-trackers/project-trackers.plsplug.json",
+   "размер": 35501,
+   "sha256": "1eb7017249fd8e2733f0a16b4c37a8ee7e0aa104b1f8a4920fca8d5361af93d4",
+   "значок": "plugins/project-trackers/icon.svg",
+   "права": {
+    "сеть": [
+     "{адрес}",
+     "https://api.tracker.yandex.net"
+    ],
+    "хранилище": true,
+    "файлы": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Projects and task trackers",
+    "описание": "Links the plan with a task tracker - Jira, YouTrack, Yandex Tracker, Kaiten, Redmine: sprint tasks go to the tracker, statuses and spent hours come back into the plan as one undoable step, and a deviations report shows overdue tasks and overspent hours.",
+    "категория": "Projects"
+   }
+  },
+  {
+   "id": "arcade",
+   "имя": "Аркады",
+   "версия": "1.0",
+   "описание": "Игры на минуту в окне поверх таблицы: 2048, Змейка, Блоки (падающие фигуры) и Отбивалка (мяч и кирпичи). Клавиатура и мышь, три скорости, пауза, лучшие результаты. Книга не меняется: поле рисуется на холсте окна.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/arcade/arcade.plsplug.json",
+   "размер": 49968,
+   "sha256": "2e36b24b406a34bd327f67503877f2b5632112367622c120692acb7a0e746f8c",
+   "значок": "plugins/arcade/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Arcade",
+    "описание": "Five classics in a plugin window: snake, falling blocks, breakout, 2048 and a space shooter - keyboard control, levels, records kept on this computer.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "solitaire",
+   "имя": "Пасьянсы",
+   "версия": "1.0",
+   "описание": "Косынка (по одной и по три карты), Паук (одна, две и четыре масти) и Свободная ячейка — в окне поверх книги или документа. Карты тянутся мышью, щелчок отправляет карту, куда можно; отмена хода, подсказка, номера раскладов, статистика побед. Своя колода; документ не меняется.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/solitaire/solitaire.plsplug.json",
+   "размер": 70696,
+   "sha256": "2b2aa69c3e28e3a8e1cd0d087b52f7d95223a6ffeb9240922dd43a337e306562",
+   "значок": "plugins/solitaire/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Solitaire",
+    "описание": "Klondike (one or three cards), Spider (one, two or four suits) and FreeCell: drag cards or double-click, hints, undo, auto-finish and statistics.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "life",
+   "имя": "Жизнь и клеточные автоматы",
+   "версия": "1.0",
+   "описание": "«Жизнь» Конвея и другие клеточные автоматы прямо на листе: рисуйте живые клетки выделением или возьмите узор с листа — и запускайте. Шаг, пуск со скоростью, правила B/S (высокая жизнь, день и ночь, семена, лабиринт), «Мозг Брайана», одномерные правила, библиотека фигур, RLE, график численности. Книга не меняется: поле — на черновом листе.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/life/life.plsplug.json",
+   "размер": 44679,
+   "sha256": "a6ae8a42a97fefa984ab90ff3934873509201ae1cc3a70de746820348e6af0de",
+   "значок": "plugins/life/icon.svg",
+   "права": {
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Game of Life",
+    "описание": "Conway's cellular automaton on a canvas or right on the sheet: a library of famous patterns, RLE import and export, other rules (HighLife, Day & Night and more), speed control and a population chart.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "chess",
+   "имя": "Шахматы",
+   "версия": "1.0",
+   "описание": "Шахматы в окне поверх таблицы: партия с компьютером (свой движок, восемь уровней), игра вдвоём и по переписке через общую книгу, задачи «мат в 1, 2 и 3 хода» с проверкой решения. Ход щелчками или перетаскиванием, подсказка, возврат хода, запись в русской нотации и PGN, таблица ходов и диаграмма позиции на лист.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/chess/chess.plsplug.json",
+   "размер": 86293,
+   "sha256": "bb80609b57f6975100bc952e6ab2cbfa08c9bcdc90f960b1090dcf35ddda9251",
+   "значок": "plugins/chess/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Chess",
+    "описание": "Play against the built-in engine at five levels, two players on one board, 140 mate-in-N puzzles checked by the engine, PGN export and import, move hints and take-backs.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "cities-game",
+   "имя": "Города",
+   "версия": "1.0",
+   "описание": "Игра в города с компьютером: назовите город на последнюю букву предыдущего. Правила и словарь — в плагине: больше двух с половиной тысяч городов России и мира, повторы и неверная буква отклоняются, незнакомый город можно засчитать. Уровни, время на ход, подсказка, счёт побед.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/cities-game/cities-game.plsplug.json",
+   "размер": 72281,
+   "sha256": "4c75d136aff97412582df5a9a36c0747895eef03901e92e7fd7deb339a6d2b82",
+   "значок": "plugins/cities-game/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Cities",
+    "описание": "The classic word chain with cities: against the computer or friends, Russian cities or the whole world, with hints, a timer, the map of named cities and a score.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "word-games",
+   "имя": "Словесные игры",
+   "версия": "1.0",
+   "описание": "Загадки (народные, ответ проверяется с учётом окончаний), анаграммы и «Объясни слово» для команд с таймером и счётом. Всё в окне поверх книги или документа: печатайте прямо в игре — раскладка клавиатуры не важна. Для перемены, тимбилдинга и уроков.",
+   "категория": "Игры",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/word-games/word-games.plsplug.json",
+   "размер": 46942,
+   "sha256": "95283c6e8d785b7cd1902775b1b3a17f420f69910ed0149c6139d518704f2b5c",
+   "значок": "plugins/word-games/icon.svg",
+   "права": {
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Word games",
+    "описание": "Riddles, \"words from a word\", anagrams and a gallows game: dictionaries are built into the plugin, the progress and records are kept on this computer.",
+    "категория": "Games"
+   }
+  },
+  {
+   "id": "assistant-sheets",
+   "имя": "Помощник",
+   "версия": "0.4",
+   "описание": "Просьба своими словами — и помощник делает её сам: «залей шапку голубым», «отсортируй по сумме по убыванию», «удали дубли», «добавь итоги внизу», «начисли НДС 22%», «выдели больше 1000 жёлтым», «построй круговую диаграмму». Вычисления формулами: «разница между фактом и планом», «факт в процентах от плана», «доля каждого в итоге», «сумма столбцов план и факт», «итоговый столбец», «сумма строк 2 и 3». Запросы к таблице словами: «сколько заказов у каждого менеджера», «покажи заказы из Москвы больше 10000», «средняя сумма по городам по убыванию», «топ 5 по сумме» — вторая маленькая модель переводит просьбу в запрос Пульса, умная таблица заводится сама, результат ложится рядом. Несколько команд — по шагам: «отсортируй по сумме, потом добавь итоги и закрепи шапку». Окно «Макрос…» собирает из шагов (и запросов) макрос книги: выполнить, сохранить на вкладку «Макросы», повесить на кнопку. Около сорока команд: оформление, форматы, сортировка, повторы, итоги, свод, подсветка, диаграммы. Без сети: две обученные модели (1 МБ и 0,8 МБ) понимают разные формулировки и опечатки. Не уверен — переспросит.",
+   "категория": "Помощник",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/assistant-sheets/assistant-sheets.plsplug.json",
+   "размер": 98163,
+   "sha256": "b9331b12640380082df2786f3056231315f68905f8768bf7274c03c7644efb85",
+   "значок": "plugins/assistant-sheets/icon.svg",
+   "права": {
+    "файлы": true,
+    "макросы": true,
+    "ресурсы": {
+     "число": 3,
+     "объём": 2026578
+    }
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Assistant",
+    "описание": "Ask in your own words and the assistant does it for you: \"fill the header light blue\", \"sort by amount, largest first\", \"remove duplicates\", \"add totals at the bottom\", \"add 22% VAT\", \"summary by manager\", \"highlight values over 1000 in yellow\", \"build a pie chart\". Queries in plain words: \"how many orders per manager\", \"orders from Moscow over 10000\", \"average amount by city, descending\" — a second small model turns the request into a query. Formulas: \"difference between actual and plan\", \"actual as a percentage of plan\", \"share of each row in the total\", \"sum of columns plan and actual\", \"total column\", \"sum of rows 2 and 3\". Several commands in one request run step by step; the \"Macro\" window turns the steps into a workbook macro you can run, save on the Macros tab and put on a button. About forty commands: formatting, number formats, sorting, duplicates, totals, summaries, highlighting, charts. Works with no internet: a small trained model (about 1 MB) understands different wordings and typos; when unsure it asks and offers options. Commands in Russian.",
+    "категория": "Assistant"
+   }
+  },
+  {
+   "id": "assistant-docs",
+   "имя": "Помощник",
+   "версия": "0.1",
+   "описание": "Просьба своими словами — и помощник делает её сам: «сделай это заголовком», «поля 2 см», «альбомная», «интервал полуторный», «номера страниц внизу справа», «подложка ЧЕРНОВИК», «вставь таблицу 3 на 5», «удали пустые абзацы», «кавычки ёлочками». Около тридцати команд: оформление текста, абзацы, страница, колонтитулы, оглавление, чистка. Работает без сети: маленькая обученная модель (около 1 МБ) понимает разные формулировки и опечатки. Не уверен — переспросит и предложит варианты; каждая просьба — один шаг «Отменить».",
+   "категория": "Помощник",
+   "приложения": [
+    "документы"
+   ],
+   "файл": "plugins/assistant-docs/assistant-docs.plsplug.json",
+   "размер": 71291,
+   "sha256": "996086e4d3ce795143cc0b1b9f3c4be9d995c2c509ada82150a7c554cda7c956",
+   "значок": "plugins/assistant-docs/icon.svg",
+   "права": {
+    "файлы": true,
+    "ресурсы": {
+     "число": 1,
+     "объём": 1131576
+    }
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Assistant",
+    "описание": "Ask in your own words and the assistant does it for you: \"make this a heading\", \"2 cm margins\", \"landscape\", \"1.5 line spacing\", \"page numbers bottom right\", \"DRAFT watermark\", \"insert a 3 by 5 table\", \"remove empty paragraphs\", \"use guillemets\". About thirty commands: text formatting, paragraphs, page setup, headers and footers, table of contents, clean-up. Works with no internet: a small trained model (about 1 MB) understands different wordings and typos; when unsure it asks and offers options; each request is one Undo step. Commands in Russian.",
+    "категория": "Assistant"
+   }
+  },
+  {
+   "id": "foresight",
+   "имя": "Форсайт",
+   "версия": "2.9.2",
+   "описание": "Срезы OLAP-кубов, регламентные и экспресс-отчёты «Форсайт. Аналитическая платформа» прямо на листе: сеанс с репозиторием (логин и пароль или доменный вход Windows), сохранённые подключения с выбором, куб одним деревом — измерения и их элементы с поиском, отметка ветками (все потомки, листья ветки), раскладка по строкам, столбцам и фиксированным, подписи по атрибуту. Фиксированные измерения — элементы страниц над таблицей: другой элемент выбирается прямо на листе, из списка с поиском, и срез перестраивается на месте. Строки и столбцы среза собираются на месте: двойной щелчок раскрывает элемент там, где он стоит, в меню клетки — до нижнего уровня, к родителю, убрать, сдвинуть, добавить сочетание, детализация числа с возвратом. Сетка среза встаёт и без чисел — с причиной; что спрошено у сервера и что пришло — на вкладке «Срез». Свободный ввод: впишите названия элементов в боковик и шапку — срез соберётся по ним. Строки и столбцы, собранные на листе (не все сочетания), спрашиваются у сервера группами — без лишних клеток. Регламентные и экспресс-отчёты — на этот лист или на новый, с оформлением, «Обновить» на месте. Регламентный отчёт правится прямо на листе, из меню клетки: убрать строку или столбец, оставить только его, добавить элемент из списка, вычисляемая строка по формуле, пустые строки и столбцы скрывает сервер, свободные строки с текстом; правки видны сразу, а на сервер уходят кнопкой «Сохранить отчёт на сервере». Числа среза и областей ввода отчётов (форм ввода) правятся на листе и пишутся в куб модулем записи на сервере. Срезы и отчёты живут в листе и уходят в файл. Журнал сеанса — запросы к «Форсайту» и ответы, вызовы и сообщения плагина в отдельном окне.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/foresight/foresight.plsplug.json",
+   "размер": 302387,
+   "sha256": "794d1b172c2208a18d89165f0502b8513a6c50d16e5da4d5f1c56c8c0aa80783",
+   "значок": "plugins/foresight/icon.svg",
+   "права": {
+    "сеть": [
+     "{адрес}"
+    ],
+    "хранилище": true,
+    "читает": "выделение",
+    "вход": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Foresight",
+    "описание": "Slices of \"Foresight. Analytics Platform\" OLAP cubes right on the sheet: a session with the repository, the list of cubes, dimensions laid out in rows, in columns or fixed, elements ticked in a searchable tree, captions from an element attribute. Rows and columns are built in place: a double click drills into an element just where it stands; the cell menu drills to the bottom level, up to the parent, removes, moves or adds a combination, and breaks a number down with a way back. Free-form entry: type element names into the row and column headers and the slice is built from them. Numbers can be edited on the sheet and written to the cube through a write module on the server. The slice lives in the sheet and travels with the file; the password is not stored in the book.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "ai",
+   "имя": "ИИ агент",
+   "версия": "1.0",
+   "описание": "Помощник с языковой моделью: чат с документом в контексте, действия над выделенным, агент, слайды из плана, картинки, функции клеток. Подключения — Qwen (облако Alibaba и Ollama на своей машине) и другие сервисы",
+   "категория": "Помощник",
+   "приложения": [
+    "таблицы",
+    "документы",
+    "проекты",
+    "презентации"
+   ],
+   "файл": "plugins/ai/ai.plsplug.json",
+   "размер": 162140,
+   "sha256": "2c050ebb182abc748c22e151e1c9b4589cb6e901e6e45e3d21c4c8cacdcdbfa8",
+   "значок": "plugins/ai/icon.svg",
+   "права": {
+    "сеть": [
+     "{хост}",
+     "{хост2}"
+    ],
+    "хранилище": true,
+    "файлы": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "AI agent",
+    "описание": "An assistant backed by a language model: a chat with the open document in context, actions on the selection (explain, shorten, fix, improve, translate, continue), an agent that reads and edits the document step by step, slides from an outline, pictures by description, and cell functions AI.ASK, AI.TRANSLATE, AI.EXTRACT, AI.CLASSIFY, AI.SUMMARIZE. Connections: Qwen (Alibaba Cloud Model Studio and Ollama on your own machine), LM Studio, OpenRouter, OpenAI, Anthropic, Gemini, YandexGPT, GigaChat, Mistral, DeepSeek or any compatible service by address. Access keys stay in the browser.",
+    "категория": "Assistant"
+   }
+  },
+  {
+   "id": "themes",
+   "имя": "Темы оформления",
+   "версия": "1.1",
+   "описание": "Темы оформления Пульс Офиса: лента, значки, меню и окна. Современная, Ретро, Объёмная, Индустриальная, Хакер и Древний Египет; у тёмных тем тёмный и лист — только на экране, печать и файлы в своих цветах. Шрифт интерфейса на выбор — Ubuntu, Ubuntu Sans, PT Sans, Inter и другие, в любой теме.",
+   "категория": "Оформление",
+   "приложения": [
+    "таблицы",
+    "документы",
+    "проекты",
+    "презентации"
+   ],
+   "файл": "plugins/themes/themes.plsplug.json",
+   "размер": 325790,
+   "sha256": "f31cb00124ce3a548e2d5fdcd2ea416acf4347b333af3f11d9860e9f3613254e",
+   "значок": "plugins/themes/icon.svg",
+   "права": {
+    "ресурсы": {
+     "число": 10,
+     "объём": 1033555
+    }
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Themes",
+    "описание": "Puls Office themes: ribbon, icons, menus and windows. Modern, Retro, Volume, Industrial, Hacker and Ancient Egypt; dark themes darken the sheet too, on screen only: printing and files keep their own colours. Interface font of your choice — Ubuntu, Ubuntu Sans, PT Sans, Inter and more, with any theme.",
+    "категория": "Appearance"
+   }
+  }
+ ]
+}
