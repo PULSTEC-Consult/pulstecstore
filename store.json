@@ -1459,15 +1459,15 @@
     "таблицы"
    ],
    "файл": "plugins/assistant-sheets/assistant-sheets.plsplug.json",
-   "размер": 98163,
-   "sha256": "b9331b12640380082df2786f3056231315f68905f8768bf7274c03c7644efb85",
+   "размер": 99098,
+   "sha256": "e1cd8dbbcea047d6153daba31d50fadd3c2a69f41616c38489cdf026e1e50435",
    "значок": "plugins/assistant-sheets/icon.svg",
    "права": {
     "файлы": true,
     "макросы": true,
     "ресурсы": {
      "число": 3,
-     "объём": 2026578
+     "объём": 2026642
     }
    },
    "нужнаВерсия": "1.0",
