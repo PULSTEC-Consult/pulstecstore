@@ -1033,6 +1033,54 @@
    }
   },
   {
+   "id": "table-collect",
+   "имя": "Сбор таблиц",
+   "версия": "1.0",
+   "описание": "Таблицы из отчётов «для печати» (сметы, заказы, расчёты, реестры) — в одну умную таблицу. Шапка находится сама, заголовки документа и подписи над и под таблицей пропускаются, этапы из строк-разделов и объединённых клеток проставляются в каждой строке, промежуточные итоги отделяются и сверяются с суммой строк, столбцы сводятся по названиям через словарь. Источник — файлы, папка или листы этой книги; виды документов — в столбце «Вид»; журнал сборки.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/table-collect/table-collect.plsplug.json",
+   "размер": 46764,
+   "sha256": "aa14cc132a3e1a6a6657797d84d61b9979e5445968ba42be4416dd29c1aa704a",
+   "значок": "plugins/table-collect/icon.svg",
+   "права": {
+    "читает": "ничего",
+    "файлы": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Table collector",
+    "описание": "Tables from print-style reports (estimates, orders, cost sheets, registers) into one smart table: the header row is found by itself, titles and signatures above and below are skipped, stages from section rows and merged cells go to every row, subtotals are separated and checked against the rows, columns are matched by name through a dictionary. Files, a folder or the sheets of this book; a «Kind» column and a collection log.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "table-diagram",
+   "имя": "Схема из таблицы",
+   "версия": "1.1",
+   "описание": "Список серверов (систем, узлов, сотрудников) — в схему Диаграмм: каждая строка — фигура с описанием из выбранных столбцов, связи из столбца «Связь» («Сервер 2 (HTTPS:443), Сервер 3») — линиями с подписью, группы — листами схемы и областями. Какой столбец идёт на лист, какой в область, какой в описание, а какой не учитывается, — выбирается. Связь на другой лист — пометкой, не найденная — красной пометкой; «не в работе» — бледнее. У областей — итоги по числовым столбцам (CPU, RAM, диски). Связи цепляются к точкам соединения фигур. Схема раскладывается сама и открывается в Диаграммах новыми листами открытой схемы (или новой схемой); настройки помнит лист.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/table-diagram/table-diagram.plsplug.json",
+   "размер": 53692,
+   "sha256": "1bde9f3b17d04d488136649eff2810f16c49a5724d6d3b7f26ed0b2fe2a5e1f6",
+   "значок": "plugins/table-diagram/icon.svg",
+   "права": {
+    "читает": "ничего",
+    "файлы": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Diagram from a table",
+    "описание": "A list of servers (systems, nodes) becomes a diagram: one shape per row with a description from the chosen columns, links from a «Server 2 (HTTPS:443), Server 3» column as labelled arrows, groups as diagram sheets and containers. You choose which column becomes a sheet, a container, part of the description or is ignored. The diagram lays itself out and opens in Diagrams; the sheet remembers the settings.",
+    "категория": "Data"
+   }
+  },
+  {
    "id": "pdf-tables",
    "имя": "Таблицы из PDF",
    "версия": "1.1.1",
@@ -1452,15 +1500,15 @@
   {
    "id": "assistant-sheets",
    "имя": "Помощник",
-   "версия": "0.6",
-   "описание": "Просьба своими словами — и помощник делает её сам: «залей шапку голубым», «отсортируй по сумме по убыванию», «удали дубли», «добавь итоги внизу», «начисли НДС 22%», «выдели больше 1000 жёлтым», «уменьши выручку на 10%», «отформатируй итоги», «отбери только 2026 год», «март 2025 и март 2026», «март всех лет», «шрифт крупнее», «построй круговую диаграмму». Вычисления формулами: «разница между фактом и планом», «факт в процентах от плана», «доля каждого в итоге», «сумма столбцов план и факт», «итоговый столбец», «сумма строк 2 и 3». Запросы к таблице словами: «сколько заказов у каждого менеджера», «покажи заказы из Москвы больше 10000», «средняя сумма по городам по убыванию», «топ 5 по сумме» — вторая маленькая модель переводит просьбу в запрос Пульса, умная таблица заводится сама, результат ложится рядом. Групповой пересчёт по категориям: «увеличь ядра по тестовому ландшафту на 20%» — просто умножит срез; «для DB-серверов увеличь ядра в 2 раза, разницу пропорционально сними с остальных» — поднимет названных и снимет столько же с остальных строк той же рамки, сумма столбца не изменится; слушается границ: «но не меньше 2 и не больше 64». Сравнение срезов: «сравни тест и прод по ядрам» — сводка Тест | Прод | разница | % рядом с таблицей. Расчёт по второй таблице: «подними ядра там, где утилизация выше 90%, чтобы стала не больше 70%» — вторая таблица находится сама по совпадению имён, а со словами «общее количество сохрани» разница снимается с тех, у кого есть запас. Целые значения остаются целыми. Несколько команд — по шагам: «отсортируй по сумме, потом добавь итоги и закрепи шапку». Окно «Макрос…» собирает из шагов (и запросов) макрос книги: выполнить, сохранить на вкладку «Макросы», повесить на кнопку. Около сорока команд: оформление, форматы, сортировка, повторы, итоги, свод, подсветка, диаграммы. Без сети: две обученные модели (1 МБ и 0,8 МБ) понимают разные формулировки и опечатки. Не уверен — переспросит.",
+   "версия": "0.7",
+   "описание": "Просьба своими словами — и помощник делает её сам: «залей шапку голубым», «отсортируй по сумме по убыванию», «удали дубли», «добавь итоги внизу», «промежуточные итоги по городу», «фамилии прописными», «замени «ООО» на «АО»», «начисли НДС 22%», «выдели больше 1000 жёлтым», «уменьши выручку на 10%», «отформатируй итоги», «отбери только 2026 год», «март 2025 и март 2026», «март всех лет», «шрифт крупнее», «построй круговую диаграмму». Вычисления формулами: «разница между фактом и планом», «факт в процентах от плана», «доля каждого в итоге», «сумма столбцов план и факт», «итоговый столбец», «сумма строк 2 и 3». Запросы к таблице словами: «сколько заказов у каждого менеджера», «покажи заказы из Москвы больше 10000», «средняя сумма по городам по убыванию», «топ 5 по сумме» — вторая маленькая модель переводит просьбу в запрос Пульса, умная таблица заводится сама, результат ложится рядом. Групповой пересчёт по категориям: «увеличь ядра по тестовому ландшафту на 20%» — просто умножит срез; «для DB-серверов увеличь ядра в 2 раза, разницу пропорционально сними с остальных» — поднимет названных и снимет столько же с остальных строк той же рамки, сумма столбца не изменится; слушается границ: «но не меньше 2 и не больше 64». Сравнение срезов: «сравни тест и прод по ядрам» — сводка Тест | Прод | разница | % рядом с таблицей. Расчёт по второй таблице: «подними ядра там, где утилизация выше 90%, чтобы стала не больше 70%» — вторая таблица находится сама по совпадению имён, а со словами «общее количество сохрани» разница снимается с тех, у кого есть запас. Целые значения остаются целыми. Несколько команд — по шагам: «отсортируй по сумме, потом добавь итоги и закрепи шапку». Окно «Макрос…» собирает из шагов (и запросов) макрос книги: выполнить, сохранить на вкладку «Макросы», повесить на кнопку. Около сорока команд: оформление, форматы, сортировка, повторы, итоги, свод, подсветка, диаграммы. Без сети: две обученные модели (1 МБ и 0,8 МБ) понимают разные формулировки и опечатки. Не уверен — переспросит.",
    "категория": "Помощник",
    "приложения": [
     "таблицы"
    ],
    "файл": "plugins/assistant-sheets/assistant-sheets.plsplug.json",
-   "размер": 157075,
-   "sha256": "1e9af273583fc152d0a790fdadffdf2cac19163823d5d4e9d5c140995ba2f344",
+   "размер": 171914,
+   "sha256": "e19770f9c8a37364064e21bd220464fd547f7fee35d3d96e0e11cf7a9d235ab2",
    "значок": "plugins/assistant-sheets/icon.svg",
    "права": {
     "хранилище": true,
@@ -1468,35 +1516,35 @@
     "макросы": true,
     "ресурсы": {
      "число": 5,
-     "объём": 3233581
+     "объём": 3266099
     }
    },
    "нужнаВерсия": "1.0",
    "en": {
     "имя": "Assistant",
-    "описание": "Ask in your own words and the assistant does it for you: \"fill the header light blue\", \"sort by amount, largest first\", \"remove duplicates\", \"add totals at the bottom\", \"add 22% VAT\", \"summary by manager\", \"highlight values over 1000 in yellow\", \"build a pie chart\". Queries in plain words: \"how many orders per manager\", \"orders from Moscow over 10000\", \"average amount by city, descending\" — a second small model turns the request into a query. Formulas: \"difference between actual and plan\", \"actual as a percentage of plan\", \"share of each row in the total\", \"sum of columns plan and actual\", \"total column\", \"sum of rows 2 and 3\". Several commands in one request run step by step; the \"Macro\" window turns the steps into a workbook macro you can run, save on the Macros tab and put on a button. About forty commands: formatting, number formats, sorting, duplicates, totals, summaries, highlighting, charts. Works with no internet: a small trained model (about 1 MB) understands different wordings and typos; when unsure it asks and offers options. Commands in Russian.",
+    "описание": "Ask in your own words and the assistant does it for you: \"fill the header light blue\", \"sort by amount, largest first\", \"remove duplicates\", \"add totals at the bottom\", \"subtotals by city\", \"surnames in capitals\", \"replace LLC with JSC\", \"add 22% VAT\", \"summary by manager\", \"highlight values over 1000 in yellow\", \"build a pie chart\". Queries in plain words: \"how many orders per manager\", \"orders from Moscow over 10000\", \"average amount by city, descending\" — a second small model turns the request into a query. Formulas: \"difference between actual and plan\", \"actual as a percentage of plan\", \"share of each row in the total\", \"sum of columns plan and actual\", \"total column\", \"sum of rows 2 and 3\". Several commands in one request run step by step; the \"Macro\" window turns the steps into a workbook macro you can run, save on the Macros tab and put on a button. About forty commands: formatting, number formats, sorting, duplicates, totals, summaries, highlighting, charts. Works with no internet: a small trained model (about 1 MB) understands different wordings and typos; when unsure it asks and offers options. Commands in Russian.",
     "категория": "Assistant"
    }
   },
   {
    "id": "assistant-docs",
    "имя": "Помощник",
-   "версия": "0.3",
+   "версия": "0.4",
    "описание": "Просьба своими словами — и помощник делает её сам: «сделай это заголовком», «поля 2 см», «альбомная», «интервал полуторный», «номера страниц внизу справа», «подложка ЧЕРНОВИК», «вставь таблицу 3 на 5», «удали пустые абзацы», «кавычки ёлочками», «расставь заголовки», «заголовки шрифтом Arial 16», «сделай заголовки нежирными», «оглавление крупнее», «весь документ Times New Roman 14». Около тридцати команд: оформление текста, абзацы, страница, колонтитулы, оглавление, чистка. Работает без сети: маленькая обученная модель (около 1 МБ) понимает разные формулировки и опечатки. Не уверен — переспросит и предложит варианты; каждая просьба — один шаг «Отменить».",
    "категория": "Помощник",
    "приложения": [
     "документы"
    ],
    "файл": "plugins/assistant-docs/assistant-docs.plsplug.json",
-   "размер": 142436,
-   "sha256": "051adb12c7b533ac761c7e8bdeceda5c512e553baf2b051b1212ada2bf843bbb",
+   "размер": 142972,
+   "sha256": "47432277a96df1002672c09fee0fadea10403b4f506bf7c8178d7d258665cac0",
    "значок": "plugins/assistant-docs/icon.svg",
    "права": {
     "хранилище": true,
     "файлы": true,
     "ресурсы": {
      "число": 3,
-     "объём": 2291710
+     "объём": 2324228
     }
    },
    "нужнаВерсия": "1.0",
