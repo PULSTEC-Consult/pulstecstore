@@ -602,6 +602,39 @@
    }
   },
   {
+   "id": "yandex-disk",
+   "имя": "Яндекс Диск",
+   "версия": "1.6",
+   "описание": "Файлы на Яндекс Диске — в любом приложении Пульс Офиса. «Войти» в панели плагина открывает окно Яндекса: логин и пароль (или «Разрешить», если вы уже вошли в Яндекс) — и «Открыть» и «Сохранить как» предложат выбор: это устройство или Диск, а «Сохранить» запишет файл туда, откуда его открыли. В браузере со страницы, открытой с диска, вход — QR-кодом с телефона или кодом на странице Яндекса. Вход помнится (ключ хранится зашифрованным) до «Выйти».",
+   "категория": "Сервисы",
+   "приложения": [
+    "таблицы",
+    "документы",
+    "презентации",
+    "проекты",
+    "диаграммы"
+   ],
+   "файл": "plugins/yandex-disk/yandex-disk.plsplug.json",
+   "размер": 53810,
+   "sha256": "633c736c63331b5ffd8812166ad88a3bd02dcb7915a8ad8e9acde40a092297f7",
+   "значок": "plugins/yandex-disk/icon.svg",
+   "права": {
+    "сеть": [
+     "https://oauth.yandex.ru/",
+     "https://cloud-api.yandex.net/",
+     "https://*.yandex.net/",
+     "https://*.yandex.ru/"
+    ],
+    "хранилище": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Yandex Disk",
+    "описание": "Files on Yandex Disk in every Puls Office app. Sign in in the plugin panel: a Yandex window opens for your login and password (or just Allow if you are already signed in to Yandex). Then Open and Save as offer a choice between this device and the Disk, while Save writes the file back where it came from. In a browser page opened from disk, sign in with a QR code from your phone or a code on the Yandex page. Sign-in is remembered (the key is stored encrypted) until Sign out.",
+    "категория": "Services"
+   }
+  },
+  {
    "id": "pii-scan",
    "имя": "Персональные данные",
    "версия": "1.0",
