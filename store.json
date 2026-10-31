@@ -1239,16 +1239,16 @@
   {
    "id": "pdf-edit",
    "имя": "PDF и распознавание",
-   "версия": "2.0.0",
-   "описание": "PDF, таблицы и снимки документов — на этом компьютере, без отправки файлов во внешние службы. PDF открывается документом для правки: текст страниц собирается в абзацы, заголовки и списки, таблицы становятся таблицами, картинки и ссылки остаются на своих местах; полужирный, курсив, кегль, цвет и шрифты, вшитые в PDF, сохраняются; колонтитулы и номера страниц переносятся в колонтитулы документа. Таблица из PDF ложится на лист или в документ: столбцы определяются по линиям таблицы или по просветам между текстом, страницы склеиваются в одну таблицу без повторов шапки, числа и даты становятся значениями. Текст и таблицы распознаются с картинки, скана в PDF и снимка: на телефоне и планшете в «Открыть» появляются «Галерея» и «Камера». Снимок становится документом «как на снимке» — с заголовками, отступами, полужирным, списками и таблицами — или таблицей на листе; тень и наклон снимка выправляются. Подпись (факсимиле) ставится в документ и в исходный PDF. Движок распознавания Tesseract (свободная лицензия Apache 2.0) и языковые данные — русский и английский — загружаются при установке плагина, около 9 МБ, один раз. Объединяет прежние плагины «Правка PDF», «Таблицы из PDF» и «Распознавание текста и таблиц»: поставленные прежние плагины заменяются этим.",
+   "версия": "2.3.0",
+   "описание": "PDF, таблицы и снимки документов — на этом компьютере, без отправки файлов во внешние службы. PDF открывается документом для правки: текст страниц собирается в абзацы, заголовки и списки, таблицы становятся таблицами, картинки и ссылки остаются на своих местах; полужирный, курсив, кегль, цвет и шрифты, вшитые в PDF, сохраняются; колонтитулы и номера страниц переносятся в колонтитулы документа. Таблица из PDF ложится на лист или в документ: столбцы определяются по линиям таблицы или по просветам между текстом, страницы склеиваются в одну таблицу без повторов шапки, числа и даты становятся значениями. Текст и таблицы распознаются с картинки, скана в PDF и снимка: на телефоне и планшете в «Открыть» появляются «Галерея» и «Камера». Снимок становится документом «как на снимке» — с заголовками, отступами, полужирным, списками и таблицами — или таблицей на листе; тень и наклон снимка выправляются, таблица распознаётся по клеткам — и в тени, и на снимке, сделанном боком недорогой камерой. Подпись (факсимиле) ставится в документ и в исходный PDF. Движок распознавания Tesseract (свободная лицензия Apache 2.0) и языковые данные — русский и английский — загружаются при установке плагина, около 7 МБ, один раз. Объединяет прежние плагины «Правка PDF», «Таблицы из PDF» и «Распознавание текста и таблиц»: поставленные прежние плагины заменяются этим.",
    "категория": "Документы",
    "приложения": [
     "таблицы",
     "документы"
    ],
    "файл": "plugins/pdf-edit/pdf-edit.plsplug.json",
-   "размер": 246266,
-   "sha256": "1fb9fabf21f02e8833602a2fe69b820e946af7d94d226a69436670d773482fa6",
+   "размер": 298647,
+   "sha256": "2ce2d654834182ef9bb04ff52dd6e80c23225f1d0b5ebb6f0c021f6043c0bd83",
    "значок": "plugins/pdf-edit/icon.svg",
    "права": {
     "хранилище": true,
@@ -1258,8 +1258,8 @@
      "pdf"
     ],
     "ресурсы": {
-     "число": 4,
-     "объём": 8628600
+     "число": 6,
+     "объём": 12195912
     }
    },
    "нужнаВерсия": "1.0",
@@ -1269,7 +1269,7 @@
    ],
    "en": {
     "имя": "PDF and recognition",
-    "описание": "PDFs, tables and photos of documents, on this computer, without sending files anywhere. A PDF opens as a document for editing: paragraphs, headings, lists, tables, pictures and links in place; bold, italic, size, colour and embedded fonts are kept. A table from a PDF goes into a sheet or a document: columns by ruling lines or by gaps, pages glued without repeated headers, numbers and dates as values. Text and tables are recognised from a picture, a scanned PDF or a photo: on a phone or tablet, “Open” offers “Gallery” and “Camera”. A photo becomes a document laid out like the page (headings, indents, bold, lists, tables) or a table on a sheet; shadows and tilt are corrected. A facsimile signature goes into the document and the original PDF. The Tesseract engine (Apache 2.0) and Russian and English data, about 9 MB, are loaded once when the plugin is installed. Replaces the former “PDF editing”, “Tables from PDF” and “Text and table recognition” plugins.",
+    "описание": "PDFs, tables and photos of documents, on this computer, without sending files anywhere. A PDF opens as a document for editing: paragraphs, headings, lists, tables, pictures and links in place; bold, italic, size, colour and embedded fonts are kept. A table from a PDF goes into a sheet or a document: columns by ruling lines or by gaps, pages glued without repeated headers, numbers and dates as values. Text and tables are recognised from a picture, a scanned PDF or a photo: on a phone or tablet, “Open” offers “Gallery” and “Camera”. A photo becomes a document laid out like the page (headings, indents, bold, lists, tables) or a table on a sheet; shadows and tilt are corrected, and a table is read cell by cell, even in shadow or shot sideways with a cheap camera. A facsimile signature goes into the document and the original PDF. The Tesseract engine (Apache 2.0) and fast and accurate Russian and English models, about 12 MB, are loaded once when the plugin is installed; the accurate models step in for difficult photos. Replaces the former “PDF editing”, “Tables from PDF” and “Text and table recognition” plugins.",
     "категория": "Documents"
    }
   },
@@ -1458,7 +1458,7 @@
    ],
    "файл": "plugins/assistant-sheets/assistant-sheets.plsplug.json",
    "размер": 171914,
-   "sha256": "019380a8462723040b2d4ce4dc9696284de0f091867a67b597f1683a607c2f5d",
+   "sha256": "a5825a61b37178e3147d0522593ddd944dfb8edbaf994a855182828b048f6b4b",
    "значок": "plugins/assistant-sheets/icon.svg",
    "права": {
     "хранилище": true,
@@ -1466,7 +1466,7 @@
     "макросы": true,
     "ресурсы": {
      "число": 5,
-     "объём": 3269803
+     "объём": 3269481
     }
    },
    "нужнаВерсия": "1.0",
@@ -1487,14 +1487,14 @@
    ],
    "файл": "plugins/assistant-docs/assistant-docs.plsplug.json",
    "размер": 142972,
-   "sha256": "7b8ebc5231205f1df6b20128368dd19c46a3425cca364803b3bf7a524891cdc1",
+   "sha256": "97d101d7323b21a6ea61c5c051e22c05b48a7a16bd2bb236290ef6deb53d866c",
    "значок": "plugins/assistant-docs/icon.svg",
    "права": {
     "хранилище": true,
     "файлы": true,
     "ресурсы": {
      "число": 3,
-     "объём": 2327932
+     "объём": 2327610
     }
    },
    "нужнаВерсия": "1.0",

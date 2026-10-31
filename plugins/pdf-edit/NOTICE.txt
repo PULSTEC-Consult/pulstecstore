@@ -7,8 +7,13 @@ data/tesseract-core-simd-lstm.wasm, data/tesseract-core-simd-lstm.js
   Leptonica — лицензия BSD-2 (https://github.com/DanBloomberg/leptonica).
 
 data/rus.traineddata.gz, data/eng.traineddata.gz
-  Языковые данные tessdata (best_int, 4.0.0) — Apache License 2.0
-  (https://github.com/tesseract-ocr/tessdata_best), упаковка @tesseract.js-data — MIT.
+  Языковые данные tessdata_fast (4.1.0; быстрые модели LSTM, сжаты gzip) — Apache License 2.0
+  (https://github.com/tesseract-ocr/tessdata_fast).
+
+data/rus_best.traineddata.gz, data/eng_best.traineddata.gz
+  Языковые данные tessdata 4.0.0 (точные модели LSTM в целочисленном виде, сжаты gzip; пакет tesseract.js-data,
+  каталог 4.0.0_best_int) — Apache License 2.0 (https://github.com/tesseract-ocr/tessdata,
+  https://github.com/naptha/tessdata). Нужны для сложных снимков.
 
 Код самого плагина написан для Пульс Офиса. Распознавание идёт на компьютере человека:
 ни картинки, ни текст никуда не отправляются.
