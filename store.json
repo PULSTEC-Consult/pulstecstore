@@ -602,39 +602,6 @@
    }
   },
   {
-   "id": "yandex-disk",
-   "имя": "Яндекс Диск",
-   "версия": "1.7",
-   "описание": "Файлы на Яндекс Диске — в любом приложении Пульс Офиса. «Войти» в панели плагина открывает окно Яндекса: логин и пароль (или «Разрешить», если вы уже вошли в Яндекс) — и «Открыть» и «Сохранить как» предложат выбор: это устройство или Диск, а «Сохранить» запишет файл туда, откуда его открыли. В браузере со страницы, открытой с диска, вход — QR-кодом с телефона или кодом на странице Яндекса. Вход помнится (ключ хранится зашифрованным) до «Выйти».",
-   "категория": "Сервисы",
-   "приложения": [
-    "таблицы",
-    "документы",
-    "презентации",
-    "проекты",
-    "диаграммы"
-   ],
-   "файл": "plugins/yandex-disk/yandex-disk.plsplug.json",
-   "размер": 54592,
-   "sha256": "d1da0b15e537cc890defe93544035413d54dfbf7bd96aead689d664cba5ff6d7",
-   "значок": "plugins/yandex-disk/icon.svg",
-   "права": {
-    "сеть": [
-     "https://oauth.yandex.ru/",
-     "https://cloud-api.yandex.net/",
-     "https://*.yandex.net/",
-     "https://*.yandex.ru/"
-    ],
-    "хранилище": true
-   },
-   "нужнаВерсия": "1.0",
-   "en": {
-    "имя": "Yandex Disk",
-    "описание": "Files on Yandex Disk in every Puls Office app. Sign in in the plugin panel: a Yandex window opens for your login and password (or just Allow if you are already signed in to Yandex). Then Open and Save as offer a choice between this device and the Disk, while Save writes the file back where it came from. In a browser page opened from disk, sign in with a QR code from your phone or a code on the Yandex page. Sign-in is remembered (the key is stored encrypted) until Sign out.",
-    "категория": "Services"
-   }
-  },
-  {
    "id": "pii-scan",
    "имя": "Персональные данные",
    "версия": "1.0",
@@ -1114,34 +1081,6 @@
    }
   },
   {
-   "id": "pdf-tables",
-   "имя": "Таблицы из PDF",
-   "версия": "1.1.1",
-   "описание": "Таблица из PDF — в лист или в документ: выписки, прайс-листы, отчёты, сметы. Разметку плагин находит сам — по линиям таблицы или по просветам между столбцами текста; несколько страниц склеивает в одну таблицу без повторов шапки, переносы внутри клеток собирает. Числа и даты — значениями. В просмотре страницы можно поставить свои границы столбцов и отметить, где таблица начинается и кончается. Файл читается на этом компьютере, никуда не отправляется. Сканы (страницы-картинки без текста) плагин не распознаёт.",
-   "категория": "Данные",
-   "приложения": [
-    "таблицы",
-    "документы"
-   ],
-   "файл": "plugins/pdf-tables/pdf-tables.plsplug.json",
-   "размер": 110883,
-   "sha256": "88b3b580ab657ba530262c18edbcfa93ab34c1cb7007e420c3e1a775a98143ef",
-   "значок": "plugins/pdf-tables/icon.svg",
-   "права": {
-    "читает": "ничего",
-    "файлы": true,
-    "ядро": [
-     "pdf"
-    ]
-   },
-   "нужнаВерсия": "1.0",
-   "en": {
-    "имя": "Tables from PDF",
-    "описание": "A table from a PDF into a sheet or a document: bank statements, price lists, reports. Columns are found by ruling lines or by gaps in the text; pages are glued into one table, wrapped cells joined, numbers and dates become values. A page preview lets you set your own column boundaries. Works offline.",
-    "категория": "Data"
-   }
-  },
-  {
    "id": "bank-statements",
    "имя": "Банковские выписки и обмен с 1С",
    "версия": "1.0",
@@ -1192,38 +1131,6 @@
     "имя": "Moscow Exchange quotes and portfolio",
     "описание": "Formulas for quotes, prices on a date and dividends from the Moscow Exchange, a quotes table under the selection, price history with a chart, dividends and bond coupons, and a portfolio template with asset classes and returns.",
     "категория": "Services"
-   }
-  },
-  {
-   "id": "ocr",
-   "имя": "Распознавание текста и таблиц",
-   "версия": "1.1.0",
-   "описание": "Текст и таблицы с картинки — прямо на этом компьютере, без интернета и внешних служб: снимок экрана, фото документа, картинка на листе или в документе, скан в PDF. Текст ложится абзацами в документ или строками в лист; таблица — по клеткам, числа и даты значениями, сомнительные места подсвечены. Русский и английский. Движок распознавания Tesseract (свободная лицензия Apache 2.0) и языковые данные ставятся вместе с плагином — около 9 МБ, один раз.",
-   "категория": "Текст",
-   "приложения": [
-    "таблицы",
-    "документы"
-   ],
-   "файл": "plugins/ocr/ocr.plsplug.json",
-   "размер": 74154,
-   "sha256": "33027ec6dac0ab29f3983c3f3a89f938611942769e1258c143cd5e0c97e919d3",
-   "значок": "plugins/ocr/icon.svg",
-   "права": {
-    "читает": "ничего",
-    "файлы": true,
-    "ядро": [
-     "pdf"
-    ],
-    "ресурсы": {
-     "число": 4,
-     "объём": 8628600
-    }
-   },
-   "нужнаВерсия": "1.0",
-   "en": {
-    "имя": "Text and table recognition",
-    "описание": "Text and tables from a picture right on this computer, with no internet and no outside services: a screenshot, a photo of a document, a picture in the book or document, a scanned PDF. Russian and English. The Tesseract engine (Apache 2.0) and language data come with the plugin, about 9 MB, once.",
-    "категория": "Text"
    }
   },
   {
@@ -1331,28 +1238,38 @@
   },
   {
    "id": "pdf-edit",
-   "имя": "Правка PDF",
-   "версия": "1.9",
-   "описание": "PDF — документом для правки: текст страниц собирается в абзацы, заголовки и списки, таблицы становятся таблицами, картинки и ссылки остаются на своих местах; полужирный, курсив, кегль и цвет сохраняются; шрифты, вшитые в PDF, по желанию кладутся в документ — текст показывается ими же, и документ едет с ними. Колонки читаются по порядку, колонтитулы и номера страниц убираются из текста и по желанию переносятся в колонтитулы документа. Дальше документ правится как обычный и сохраняется в .plsd, .docx или .odt. Файл читается на этом компьютере и никуда не отправляется. Сканы (страницы-картинки без текста) плагин не распознаёт. Подпись (факсимиле): скан или фото подписи загружается один раз и ставится в документ. «Сохранить PDF»: текст не правился — исходный PDF, с подписью — дописанной на том же месте листа; правился — PDF из документа окном печати.",
+   "имя": "PDF и распознавание",
+   "версия": "2.0.0",
+   "описание": "PDF, таблицы и снимки документов — на этом компьютере, без отправки файлов во внешние службы. PDF открывается документом для правки: текст страниц собирается в абзацы, заголовки и списки, таблицы становятся таблицами, картинки и ссылки остаются на своих местах; полужирный, курсив, кегль, цвет и шрифты, вшитые в PDF, сохраняются; колонтитулы и номера страниц переносятся в колонтитулы документа. Таблица из PDF ложится на лист или в документ: столбцы определяются по линиям таблицы или по просветам между текстом, страницы склеиваются в одну таблицу без повторов шапки, числа и даты становятся значениями. Текст и таблицы распознаются с картинки, скана в PDF и снимка: на телефоне и планшете в «Открыть» появляются «Галерея» и «Камера». Снимок становится документом «как на снимке» — с заголовками, отступами, полужирным, списками и таблицами — или таблицей на листе; тень и наклон снимка выправляются. Подпись (факсимиле) ставится в документ и в исходный PDF. Движок распознавания Tesseract (свободная лицензия Apache 2.0) и языковые данные — русский и английский — загружаются при установке плагина, около 9 МБ, один раз. Объединяет прежние плагины «Правка PDF», «Таблицы из PDF» и «Распознавание текста и таблиц»: поставленные прежние плагины заменяются этим.",
    "категория": "Документы",
    "приложения": [
+    "таблицы",
     "документы"
    ],
    "файл": "plugins/pdf-edit/pdf-edit.plsplug.json",
-   "размер": 143569,
-   "sha256": "c28e009fb088692a66b7bddf7de8cb0cdabae78e92dce50e1ebd0a3434636d68",
+   "размер": 246266,
+   "sha256": "1fb9fabf21f02e8833602a2fe69b820e946af7d94d226a69436670d773482fa6",
    "значок": "plugins/pdf-edit/icon.svg",
    "права": {
     "хранилище": true,
+    "читает": "ничего",
     "файлы": true,
     "ядро": [
      "pdf"
-    ]
+    ],
+    "ресурсы": {
+     "число": 4,
+     "объём": 8628600
+    }
    },
    "нужнаВерсия": "1.0",
+   "прежние": [
+    "ocr",
+    "pdf-tables"
+   ],
    "en": {
-    "имя": "PDF editing",
-    "описание": "A PDF as a document for editing: page text becomes paragraphs, headings and lists, tables become tables, pictures and links stay in place; bold, italic, size and colour are kept. Columns are read in order; running headers and page numbers are removed from the text and can go into the document headers. Then the document is edited as usual and saved as .plsd, .docx or .odt. The file is read on this computer and is not sent anywhere. Scans (pages that are pictures without text) are not recognised by this plugin.",
+    "имя": "PDF and recognition",
+    "описание": "PDFs, tables and photos of documents, on this computer, without sending files anywhere. A PDF opens as a document for editing: paragraphs, headings, lists, tables, pictures and links in place; bold, italic, size, colour and embedded fonts are kept. A table from a PDF goes into a sheet or a document: columns by ruling lines or by gaps, pages glued without repeated headers, numbers and dates as values. Text and tables are recognised from a picture, a scanned PDF or a photo: on a phone or tablet, “Open” offers “Gallery” and “Camera”. A photo becomes a document laid out like the page (headings, indents, bold, lists, tables) or a table on a sheet; shadows and tilt are corrected. A facsimile signature goes into the document and the original PDF. The Tesseract engine (Apache 2.0) and Russian and English data, about 9 MB, are loaded once when the plugin is installed. Replaces the former “PDF editing”, “Tables from PDF” and “Text and table recognition” plugins.",
     "категория": "Documents"
    }
   },
@@ -1541,7 +1458,7 @@
    ],
    "файл": "plugins/assistant-sheets/assistant-sheets.plsplug.json",
    "размер": 171914,
-   "sha256": "e19770f9c8a37364064e21bd220464fd547f7fee35d3d96e0e11cf7a9d235ab2",
+   "sha256": "019380a8462723040b2d4ce4dc9696284de0f091867a67b597f1683a607c2f5d",
    "значок": "plugins/assistant-sheets/icon.svg",
    "права": {
     "хранилище": true,
@@ -1549,7 +1466,7 @@
     "макросы": true,
     "ресурсы": {
      "число": 5,
-     "объём": 3266099
+     "объём": 3269803
     }
    },
    "нужнаВерсия": "1.0",
@@ -1570,14 +1487,14 @@
    ],
    "файл": "plugins/assistant-docs/assistant-docs.plsplug.json",
    "размер": 142972,
-   "sha256": "47432277a96df1002672c09fee0fadea10403b4f506bf7c8178d7d258665cac0",
+   "sha256": "7b8ebc5231205f1df6b20128368dd19c46a3425cca364803b3bf7a524891cdc1",
    "значок": "plugins/assistant-docs/icon.svg",
    "права": {
     "хранилище": true,
     "файлы": true,
     "ресурсы": {
      "число": 3,
-     "объём": 2324228
+     "объём": 2327932
     }
    },
    "нужнаВерсия": "1.0",

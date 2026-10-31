@@ -1,0 +1,14 @@
+Плагин «PDF и распознавание» (pdf-edit; распознавание — прежний плагин ocr) — сторонние части
+
+data/tesseract-core-simd-lstm.wasm, data/tesseract-core-simd-lstm.js
+  Tesseract OCR, собранный в WebAssembly (пакет tesseract.js-core 6.1.2).
+  Tesseract — Apache License 2.0 (https://github.com/tesseract-ocr/tesseract).
+  tesseract.js-core — Apache License 2.0 (https://github.com/naptha/tesseract.js-core).
+  Leptonica — лицензия BSD-2 (https://github.com/DanBloomberg/leptonica).
+
+data/rus.traineddata.gz, data/eng.traineddata.gz
+  Языковые данные tessdata (best_int, 4.0.0) — Apache License 2.0
+  (https://github.com/tesseract-ocr/tessdata_best), упаковка @tesseract.js-data — MIT.
+
+Код самого плагина написан для Пульс Офиса. Распознавание идёт на компьютере человека:
+ни картинки, ни текст никуда не отправляются.
