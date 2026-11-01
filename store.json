@@ -1458,7 +1458,7 @@
    ],
    "файл": "plugins/assistant-sheets/assistant-sheets.plsplug.json",
    "размер": 171914,
-   "sha256": "2347b728c3143e88e552e182c65bde76fe0d84ae0098d977bc4a0a36aefe0730",
+   "sha256": "c8505a0753473febc5e57c05e4652fa4a2b941d20f91700db2751764630ae712",
    "значок": "plugins/assistant-sheets/icon.svg",
    "права": {
     "хранилище": true,
@@ -1487,7 +1487,7 @@
    ],
    "файл": "plugins/assistant-docs/assistant-docs.plsplug.json",
    "размер": 142972,
-   "sha256": "961d268f4bb7cdbcf43512adadc04f0f60fe200702ebef6e9148e2311918ca77",
+   "sha256": "83b8a4b29b8223ae506a2bc8dd97d5bc133f25ca3617187c1c036b3d496abd64",
    "значок": "plugins/assistant-docs/icon.svg",
    "права": {
     "хранилище": true,
